@@ -2,20 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c811b038-d377-47ad-abe4-07c5efeb125e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zeno/calendar/controller/RemindController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zeno/calendar/mapper/EventReminderMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zeno/calendar/mapper/EventReminderMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zeno/calendar/pojo/EventReminder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zeno/calendar/pojo/EventReminderExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_9.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/calendar.iml" beforeDir="false" afterPath="$PROJECT_DIR$/calendar.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/generatorConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/calendar.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -200,8 +187,18 @@
       <workItem from="1579224367215" duration="148000" />
       <workItem from="1579224546002" duration="20000" />
       <workItem from="1579748289028" duration="1520000" />
-      <workItem from="1579752243702" duration="3260000" />
+      <workItem from="1579752243702" duration="3662000" />
+      <workItem from="1579760589417" duration="68000" />
+      <workItem from="1579760687665" duration="1874000" />
     </task>
+    <task id="LOCAL-00001" summary="Add a table and a controller">
+      <created>1579760246376</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1579760246376</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -222,36 +219,39 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Add a table and a controller" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add a table and a controller" />
   </component>
   <component name="WindowStateProjectService">
     <state x="321" y="99" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1578111913296">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="321" y="99" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1280.720/-1920.0.1920.1080@0.0.1280.720" timestamp="1578111913296" />
-    <state x="271" y="0" key="CommitChangelistDialog2" timestamp="1579760204228">
+    <state x="271" y="0" key="CommitChangelistDialog2" timestamp="1579765880197">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="271" y="0" key="CommitChangelistDialog2/0.0.1280.720@0.0.1280.720" timestamp="1579760204228" />
-    <state x="-1180" y="296" key="FileChooserDialogImpl" timestamp="1579224306753">
-      <screen x="-1920" y="0" width="1920" height="1080" />
+    <state x="271" y="0" key="CommitChangelistDialog2/0.0.1280.720@0.0.1280.720" timestamp="1579765880197" />
+    <state x="493" y="197" key="FileChooserDialogImpl" timestamp="1579761495647">
+      <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="-1180" y="296" key="FileChooserDialogImpl/0.0.1280.720/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1579224306753" />
-    <state width="1237" height="221" key="GridCell.Tab.0.bottom" timestamp="1579759984643">
+    <state x="493" y="197" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1579761495647" />
+    <state width="1237" height="221" key="GridCell.Tab.0.bottom" timestamp="1579760555649">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="221" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1579759984643" />
-    <state width="1237" height="221" key="GridCell.Tab.0.center" timestamp="1579759984643">
+    <state width="1237" height="221" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1579760555649" />
+    <state width="1237" height="221" key="GridCell.Tab.0.center" timestamp="1579760555649">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="221" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1579759984643" />
-    <state width="1237" height="221" key="GridCell.Tab.0.left" timestamp="1579759984643">
+    <state width="1237" height="221" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1579760555649" />
+    <state width="1237" height="221" key="GridCell.Tab.0.left" timestamp="1579760555649">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="221" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1579759984643" />
-    <state width="1237" height="221" key="GridCell.Tab.0.right" timestamp="1579759984643">
+    <state width="1237" height="221" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1579760555649" />
+    <state width="1237" height="221" key="GridCell.Tab.0.right" timestamp="1579760555649">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="221" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1579759984643" />
+    <state width="1237" height="221" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1579760555649" />
     <state width="1237" height="221" key="GridCell.Tab.1.bottom" timestamp="1579759460286">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
