@@ -15,7 +15,7 @@
 
 
 		<!-- 数据库链接URL、用户名、密码 -->
-		<jdbcConnection driverClass="com.mysql.cj.jdbc.Driver"
+		<jdbcConnection driverClass="com.mysql.jdbc.Driver"
 						connectionURL="jdbc:mysql://localhost:3306/calendar?serverTimezone=UTC"
 						userId="root" password="123456">
 		</jdbcConnection>
@@ -56,6 +56,7 @@
 		enableSelectByExample:Select多条语句中加入where条件查询，默认为true开启
 		selectByExampleQueryId:Select单个对象语句中加入where条件查询，默认为true开启
 		-->
-		<table tableName="user" domainObjectName="User"/>
+		<table tableName="eventreminder" domainObjectName="EventReminder"/>
+
 	</context>
 </generatorConfiguration>
