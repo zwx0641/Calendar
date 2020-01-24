@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.zeno.calendar.mapper.EventReminderMapper">
-  <resultMap id="BaseResultMap" type="com.zeno.calendar.pojo.EventReminder">
+<mapper namespace="com.zeno.calendar.mapper.ReminderMapper">
+  <resultMap id="BaseResultMap" type="com.zeno.calendar.pojo.Reminder">
     <!--
       WARNING - @mbg.generated
     -->
-    <id column="email" jdbcType="CHAR" property="email" />
-    <result column="reminder_text" jdbcType="CHAR" property="reminderText" />
-    <result column="specific_day" jdbcType="DATE" property="specificDay" />
-    <result column="specific_time" jdbcType="TIME" property="specificTime" />
+    <id column="ID" jdbcType="CHAR" property="id" />
+    <result column="email" jdbcType="CHAR" property="email" />
+    <result column="Remind_Text" jdbcType="CHAR" property="remindText" />
+    <result column="Remind_Day" jdbcType="DATE" property="remindDay" />
+    <result column="Remind_Time" jdbcType="TIME" property="remindTime" />
+    <result column="Repetition" jdbcType="INTEGER" property="repetition" />
   </resultMap>
   <sql id="Example_Where_Clause">
     <!--
@@ -78,9 +80,9 @@
     <!--
       WARNING - @mbg.generated
     -->
-    email, reminder_text, specific_day, specific_time
+    ID, email, Remind_Text, Remind_Day, Remind_Time, Repetition
   </sql>
-  <select id="selectByExample" parameterType="com.zeno.calendar.pojo.EventReminderExample" resultMap="BaseResultMap">
+  <select id="selectByExample" parameterType="com.zeno.calendar.pojo.ReminderExample" resultMap="BaseResultMap">
     <!--
       WARNING - @mbg.generated
     -->
@@ -89,7 +91,7 @@
       distinct
     </if>
     <include refid="Base_Column_List" />
-    from eventreminder
+    from reminder
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
@@ -97,20 +99,20 @@
       order by ${orderByClause}
     </if>
   </select>
-  <delete id="deleteByExample" parameterType="com.zeno.calendar.pojo.EventReminderExample">
+  <delete id="deleteByExample" parameterType="com.zeno.calendar.pojo.ReminderExample">
     <!--
       WARNING - @mbg.generated
     -->
-    delete from eventreminder
+    delete from reminder
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
   </delete>
-  <select id="countByExample" parameterType="com.zeno.calendar.pojo.EventReminderExample" resultType="java.lang.Long">
+  <select id="countByExample" parameterType="com.zeno.calendar.pojo.ReminderExample" resultType="java.lang.Long">
     <!--
       WARNING - @mbg.generated
     -->
-    select count(*) from eventreminder
+    select count(*) from reminder
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
@@ -119,19 +121,25 @@
     <!--
       WARNING - @mbg.generated
     -->
-    update eventreminder
+    update reminder
     <set>
+      <if test="record.id != null">
+        ID = #{record.id,jdbcType=CHAR},
+      </if>
       <if test="record.email != null">
         email = #{record.email,jdbcType=CHAR},
       </if>
-      <if test="record.reminderText != null">
-        reminder_text = #{record.reminderText,jdbcType=CHAR},
+      <if test="record.remindText != null">
+        Remind_Text = #{record.remindText,jdbcType=CHAR},
       </if>
-      <if test="record.specificDay != null">
-        specific_day = #{record.specificDay,jdbcType=DATE},
+      <if test="record.remindDay != null">
+        Remind_Day = #{record.remindDay,jdbcType=DATE},
       </if>
-      <if test="record.specificTime != null">
-        specific_time = #{record.specificTime,jdbcType=TIME},
+      <if test="record.remindTime != null">
+        Remind_Time = #{record.remindTime,jdbcType=TIME},
+      </if>
+      <if test="record.repetition != null">
+        Repetition = #{record.repetition,jdbcType=INTEGER},
       </if>
     </set>
     <if test="_parameter != null">
@@ -142,11 +150,13 @@
     <!--
       WARNING - @mbg.generated
     -->
-    update eventreminder
-    set email = #{record.email,jdbcType=CHAR},
-      reminder_text = #{record.reminderText,jdbcType=CHAR},
-      specific_day = #{record.specificDay,jdbcType=DATE},
-      specific_time = #{record.specificTime,jdbcType=TIME}
+    update reminder
+    set ID = #{record.id,jdbcType=CHAR},
+      email = #{record.email,jdbcType=CHAR},
+      Remind_Text = #{record.remindText,jdbcType=CHAR},
+      Remind_Day = #{record.remindDay,jdbcType=DATE},
+      Remind_Time = #{record.remindTime,jdbcType=TIME},
+      Repetition = #{record.repetition,jdbcType=INTEGER}
     <if test="_parameter != null">
       <include refid="Update_By_Example_Where_Clause" />
     </if>

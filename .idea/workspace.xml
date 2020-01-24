@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c811b038-d377-47ad-abe4-07c5efeb125e" name="Default Changelist" comment="">
+    <list default="true" id="c811b038-d377-47ad-abe4-07c5efeb125e" name="Default Changelist" comment="Add a table and a controller">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/generatorConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zeno/calendar/mapper/EventReminderMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zeno/calendar/mapper/EventReminderMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zeno/calendar/pojo/EventReminder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zeno/calendar/pojo/EventReminderExample.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -190,6 +195,8 @@
       <workItem from="1579752243702" duration="3662000" />
       <workItem from="1579760589417" duration="68000" />
       <workItem from="1579760687665" duration="1874000" />
+      <workItem from="1579765855010" duration="152000" />
+      <workItem from="1579846723534" duration="780000" />
     </task>
     <task id="LOCAL-00001" summary="Add a table and a controller">
       <created>1579760246376</created>
@@ -223,10 +230,11 @@
     <option name="LAST_COMMIT_MESSAGE" value="Add a table and a controller" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="321" y="99" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1578111913296">
+    <state x="321" y="99" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1579846807999">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="321" y="99" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1280.720/-1920.0.1920.1080@0.0.1280.720" timestamp="1578111913296" />
+    <state x="321" y="99" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1280.720@0.0.1280.720" timestamp="1579846807999" />
     <state x="271" y="0" key="CommitChangelistDialog2" timestamp="1579765880197">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -236,22 +244,22 @@
     </state>
     <state x="-1180" y="296" key="FileChooserDialogImpl/0.0.1280.720/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1579224306753" />
     <state x="493" y="197" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1579761495647" />
-    <state width="1237" height="221" key="GridCell.Tab.0.bottom" timestamp="1579760555649">
+    <state width="1237" height="221" key="GridCell.Tab.0.bottom" timestamp="1579847613069">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="221" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1579760555649" />
-    <state width="1237" height="221" key="GridCell.Tab.0.center" timestamp="1579760555649">
+    <state width="1237" height="221" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1579847613069" />
+    <state width="1237" height="221" key="GridCell.Tab.0.center" timestamp="1579847613069">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="221" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1579760555649" />
-    <state width="1237" height="221" key="GridCell.Tab.0.left" timestamp="1579760555649">
+    <state width="1237" height="221" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1579847613069" />
+    <state width="1237" height="221" key="GridCell.Tab.0.left" timestamp="1579847613069">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="221" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1579760555649" />
-    <state width="1237" height="221" key="GridCell.Tab.0.right" timestamp="1579760555649">
+    <state width="1237" height="221" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1579847613069" />
+    <state width="1237" height="221" key="GridCell.Tab.0.right" timestamp="1579847613069">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="221" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1579760555649" />
+    <state width="1237" height="221" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1579847613069" />
     <state width="1237" height="221" key="GridCell.Tab.1.bottom" timestamp="1579759460286">
       <screen x="0" y="0" width="1280" height="720" />
     </state>

@@ -5,14 +5,14 @@ import java.util.Date;
 import java.util.Iterator;
 import java.util.List;
 
-public class EventReminderExample {
+public class ReminderExample {
     protected String orderByClause;
 
     protected boolean distinct;
 
     protected List<Criteria> oredCriteria;
 
-    public EventReminderExample() {
+    public ReminderExample() {
         oredCriteria = new ArrayList<Criteria>();
     }
 
@@ -158,6 +158,76 @@ public class EventReminderExample {
             addCriterion(condition, new java.sql.Time(value1.getTime()), new java.sql.Time(value2.getTime()), property);
         }
 
+        public Criteria andIdIsNull() {
+            addCriterion("ID is null");
+            return (Criteria) this;
+        }
+
+        public Criteria andIdIsNotNull() {
+            addCriterion("ID is not null");
+            return (Criteria) this;
+        }
+
+        public Criteria andIdEqualTo(String value) {
+            addCriterion("ID =", value, "id");
+            return (Criteria) this;
+        }
+
+        public Criteria andIdNotEqualTo(String value) {
+            addCriterion("ID <>", value, "id");
+            return (Criteria) this;
+        }
+
+        public Criteria andIdGreaterThan(String value) {
+            addCriterion("ID >", value, "id");
+            return (Criteria) this;
+        }
+
+        public Criteria andIdGreaterThanOrEqualTo(String value) {
+            addCriterion("ID >=", value, "id");
+            return (Criteria) this;
+        }
+
+        public Criteria andIdLessThan(String value) {
+            addCriterion("ID <", value, "id");
+            return (Criteria) this;
+        }
+
+        public Criteria andIdLessThanOrEqualTo(String value) {
+            addCriterion("ID <=", value, "id");
+            return (Criteria) this;
+        }
+
+        public Criteria andIdLike(String value) {
+            addCriterion("ID like", value, "id");
+            return (Criteria) this;
+        }
+
+        public Criteria andIdNotLike(String value) {
+            addCriterion("ID not like", value, "id");
+            return (Criteria) this;
+        }
+
+        public Criteria andIdIn(List<String> values) {
+            addCriterion("ID in", values, "id");
+            return (Criteria) this;
+        }
+
+        public Criteria andIdNotIn(List<String> values) {
+            addCriterion("ID not in", values, "id");
+            return (Criteria) this;
+        }
+
+        public Criteria andIdBetween(String value1, String value2) {
+            addCriterion("ID between", value1, value2, "id");
+            return (Criteria) this;
+        }
+
+        public Criteria andIdNotBetween(String value1, String value2) {
+            addCriterion("ID not between", value1, value2, "id");
+            return (Criteria) this;
+        }
+
         public Criteria andEmailIsNull() {
             addCriterion("email is null");
             return (Criteria) this;
@@ -228,193 +298,253 @@ public class EventReminderExample {
             return (Criteria) this;
         }
 
-        public Criteria andReminderTextIsNull() {
-            addCriterion("reminder_text is null");
+        public Criteria andRemindTextIsNull() {
+            addCriterion("Remind_Text is null");
             return (Criteria) this;
         }
 
-        public Criteria andReminderTextIsNotNull() {
-            addCriterion("reminder_text is not null");
+        public Criteria andRemindTextIsNotNull() {
+            addCriterion("Remind_Text is not null");
             return (Criteria) this;
         }
 
-        public Criteria andReminderTextEqualTo(String value) {
-            addCriterion("reminder_text =", value, "reminderText");
+        public Criteria andRemindTextEqualTo(String value) {
+            addCriterion("Remind_Text =", value, "remindText");
             return (Criteria) this;
         }
 
-        public Criteria andReminderTextNotEqualTo(String value) {
-            addCriterion("reminder_text <>", value, "reminderText");
+        public Criteria andRemindTextNotEqualTo(String value) {
+            addCriterion("Remind_Text <>", value, "remindText");
             return (Criteria) this;
         }
 
-        public Criteria andReminderTextGreaterThan(String value) {
-            addCriterion("reminder_text >", value, "reminderText");
+        public Criteria andRemindTextGreaterThan(String value) {
+            addCriterion("Remind_Text >", value, "remindText");
             return (Criteria) this;
         }
 
-        public Criteria andReminderTextGreaterThanOrEqualTo(String value) {
-            addCriterion("reminder_text >=", value, "reminderText");
+        public Criteria andRemindTextGreaterThanOrEqualTo(String value) {
+            addCriterion("Remind_Text >=", value, "remindText");
             return (Criteria) this;
         }
 
-        public Criteria andReminderTextLessThan(String value) {
-            addCriterion("reminder_text <", value, "reminderText");
+        public Criteria andRemindTextLessThan(String value) {
+            addCriterion("Remind_Text <", value, "remindText");
             return (Criteria) this;
         }
 
-        public Criteria andReminderTextLessThanOrEqualTo(String value) {
-            addCriterion("reminder_text <=", value, "reminderText");
+        public Criteria andRemindTextLessThanOrEqualTo(String value) {
+            addCriterion("Remind_Text <=", value, "remindText");
             return (Criteria) this;
         }
 
-        public Criteria andReminderTextLike(String value) {
-            addCriterion("reminder_text like", value, "reminderText");
+        public Criteria andRemindTextLike(String value) {
+            addCriterion("Remind_Text like", value, "remindText");
             return (Criteria) this;
         }
 
-        public Criteria andReminderTextNotLike(String value) {
-            addCriterion("reminder_text not like", value, "reminderText");
+        public Criteria andRemindTextNotLike(String value) {
+            addCriterion("Remind_Text not like", value, "remindText");
             return (Criteria) this;
         }
 
-        public Criteria andReminderTextIn(List<String> values) {
-            addCriterion("reminder_text in", values, "reminderText");
+        public Criteria andRemindTextIn(List<String> values) {
+            addCriterion("Remind_Text in", values, "remindText");
             return (Criteria) this;
         }
 
-        public Criteria andReminderTextNotIn(List<String> values) {
-            addCriterion("reminder_text not in", values, "reminderText");
+        public Criteria andRemindTextNotIn(List<String> values) {
+            addCriterion("Remind_Text not in", values, "remindText");
             return (Criteria) this;
         }
 
-        public Criteria andReminderTextBetween(String value1, String value2) {
-            addCriterion("reminder_text between", value1, value2, "reminderText");
+        public Criteria andRemindTextBetween(String value1, String value2) {
+            addCriterion("Remind_Text between", value1, value2, "remindText");
             return (Criteria) this;
         }
 
-        public Criteria andReminderTextNotBetween(String value1, String value2) {
-            addCriterion("reminder_text not between", value1, value2, "reminderText");
+        public Criteria andRemindTextNotBetween(String value1, String value2) {
+            addCriterion("Remind_Text not between", value1, value2, "remindText");
             return (Criteria) this;
         }
 
-        public Criteria andSpecificDayIsNull() {
-            addCriterion("specific_day is null");
+        public Criteria andRemindDayIsNull() {
+            addCriterion("Remind_Day is null");
             return (Criteria) this;
         }
 
-        public Criteria andSpecificDayIsNotNull() {
-            addCriterion("specific_day is not null");
+        public Criteria andRemindDayIsNotNull() {
+            addCriterion("Remind_Day is not null");
             return (Criteria) this;
         }
 
-        public Criteria andSpecificDayEqualTo(Date value) {
-            addCriterionForJDBCDate("specific_day =", value, "specificDay");
+        public Criteria andRemindDayEqualTo(Date value) {
+            addCriterionForJDBCDate("Remind_Day =", value, "remindDay");
             return (Criteria) this;
         }
 
-        public Criteria andSpecificDayNotEqualTo(Date value) {
-            addCriterionForJDBCDate("specific_day <>", value, "specificDay");
+        public Criteria andRemindDayNotEqualTo(Date value) {
+            addCriterionForJDBCDate("Remind_Day <>", value, "remindDay");
             return (Criteria) this;
         }
 
-        public Criteria andSpecificDayGreaterThan(Date value) {
-            addCriterionForJDBCDate("specific_day >", value, "specificDay");
+        public Criteria andRemindDayGreaterThan(Date value) {
+            addCriterionForJDBCDate("Remind_Day >", value, "remindDay");
             return (Criteria) this;
         }
 
-        public Criteria andSpecificDayGreaterThanOrEqualTo(Date value) {
-            addCriterionForJDBCDate("specific_day >=", value, "specificDay");
+        public Criteria andRemindDayGreaterThanOrEqualTo(Date value) {
+            addCriterionForJDBCDate("Remind_Day >=", value, "remindDay");
             return (Criteria) this;
         }
 
-        public Criteria andSpecificDayLessThan(Date value) {
-            addCriterionForJDBCDate("specific_day <", value, "specificDay");
+        public Criteria andRemindDayLessThan(Date value) {
+            addCriterionForJDBCDate("Remind_Day <", value, "remindDay");
             return (Criteria) this;
         }
 
-        public Criteria andSpecificDayLessThanOrEqualTo(Date value) {
-            addCriterionForJDBCDate("specific_day <=", value, "specificDay");
+        public Criteria andRemindDayLessThanOrEqualTo(Date value) {
+            addCriterionForJDBCDate("Remind_Day <=", value, "remindDay");
             return (Criteria) this;
         }
 
-        public Criteria andSpecificDayIn(List<Date> values) {
-            addCriterionForJDBCDate("specific_day in", values, "specificDay");
+        public Criteria andRemindDayIn(List<Date> values) {
+            addCriterionForJDBCDate("Remind_Day in", values, "remindDay");
             return (Criteria) this;
         }
 
-        public Criteria andSpecificDayNotIn(List<Date> values) {
-            addCriterionForJDBCDate("specific_day not in", values, "specificDay");
+        public Criteria andRemindDayNotIn(List<Date> values) {
+            addCriterionForJDBCDate("Remind_Day not in", values, "remindDay");
             return (Criteria) this;
         }
 
-        public Criteria andSpecificDayBetween(Date value1, Date value2) {
-            addCriterionForJDBCDate("specific_day between", value1, value2, "specificDay");
+        public Criteria andRemindDayBetween(Date value1, Date value2) {
+            addCriterionForJDBCDate("Remind_Day between", value1, value2, "remindDay");
             return (Criteria) this;
         }
 
-        public Criteria andSpecificDayNotBetween(Date value1, Date value2) {
-            addCriterionForJDBCDate("specific_day not between", value1, value2, "specificDay");
+        public Criteria andRemindDayNotBetween(Date value1, Date value2) {
+            addCriterionForJDBCDate("Remind_Day not between", value1, value2, "remindDay");
             return (Criteria) this;
         }
 
-        public Criteria andSpecificTimeIsNull() {
-            addCriterion("specific_time is null");
+        public Criteria andRemindTimeIsNull() {
+            addCriterion("Remind_Time is null");
             return (Criteria) this;
         }
 
-        public Criteria andSpecificTimeIsNotNull() {
-            addCriterion("specific_time is not null");
+        public Criteria andRemindTimeIsNotNull() {
+            addCriterion("Remind_Time is not null");
             return (Criteria) this;
         }
 
-        public Criteria andSpecificTimeEqualTo(Date value) {
-            addCriterionForJDBCTime("specific_time =", value, "specificTime");
+        public Criteria andRemindTimeEqualTo(Date value) {
+            addCriterionForJDBCTime("Remind_Time =", value, "remindTime");
             return (Criteria) this;
         }
 
-        public Criteria andSpecificTimeNotEqualTo(Date value) {
-            addCriterionForJDBCTime("specific_time <>", value, "specificTime");
+        public Criteria andRemindTimeNotEqualTo(Date value) {
+            addCriterionForJDBCTime("Remind_Time <>", value, "remindTime");
             return (Criteria) this;
         }
 
-        public Criteria andSpecificTimeGreaterThan(Date value) {
-            addCriterionForJDBCTime("specific_time >", value, "specificTime");
+        public Criteria andRemindTimeGreaterThan(Date value) {
+            addCriterionForJDBCTime("Remind_Time >", value, "remindTime");
             return (Criteria) this;
         }
 
-        public Criteria andSpecificTimeGreaterThanOrEqualTo(Date value) {
-            addCriterionForJDBCTime("specific_time >=", value, "specificTime");
+        public Criteria andRemindTimeGreaterThanOrEqualTo(Date value) {
+            addCriterionForJDBCTime("Remind_Time >=", value, "remindTime");
             return (Criteria) this;
         }
 
-        public Criteria andSpecificTimeLessThan(Date value) {
-            addCriterionForJDBCTime("specific_time <", value, "specificTime");
+        public Criteria andRemindTimeLessThan(Date value) {
+            addCriterionForJDBCTime("Remind_Time <", value, "remindTime");
             return (Criteria) this;
         }
 
-        public Criteria andSpecificTimeLessThanOrEqualTo(Date value) {
-            addCriterionForJDBCTime("specific_time <=", value, "specificTime");
+        public Criteria andRemindTimeLessThanOrEqualTo(Date value) {
+            addCriterionForJDBCTime("Remind_Time <=", value, "remindTime");
             return (Criteria) this;
         }
 
-        public Criteria andSpecificTimeIn(List<Date> values) {
-            addCriterionForJDBCTime("specific_time in", values, "specificTime");
+        public Criteria andRemindTimeIn(List<Date> values) {
+            addCriterionForJDBCTime("Remind_Time in", values, "remindTime");
             return (Criteria) this;
         }
 
-        public Criteria andSpecificTimeNotIn(List<Date> values) {
-            addCriterionForJDBCTime("specific_time not in", values, "specificTime");
+        public Criteria andRemindTimeNotIn(List<Date> values) {
+            addCriterionForJDBCTime("Remind_Time not in", values, "remindTime");
             return (Criteria) this;
         }
 
-        public Criteria andSpecificTimeBetween(Date value1, Date value2) {
-            addCriterionForJDBCTime("specific_time between", value1, value2, "specificTime");
+        public Criteria andRemindTimeBetween(Date value1, Date value2) {
+            addCriterionForJDBCTime("Remind_Time between", value1, value2, "remindTime");
             return (Criteria) this;
         }
 
-        public Criteria andSpecificTimeNotBetween(Date value1, Date value2) {
-            addCriterionForJDBCTime("specific_time not between", value1, value2, "specificTime");
+        public Criteria andRemindTimeNotBetween(Date value1, Date value2) {
+            addCriterionForJDBCTime("Remind_Time not between", value1, value2, "remindTime");
+            return (Criteria) this;
+        }
+
+        public Criteria andRepetitionIsNull() {
+            addCriterion("Repetition is null");
+            return (Criteria) this;
+        }
+
+        public Criteria andRepetitionIsNotNull() {
+            addCriterion("Repetition is not null");
+            return (Criteria) this;
+        }
+
+        public Criteria andRepetitionEqualTo(Integer value) {
+            addCriterion("Repetition =", value, "repetition");
+            return (Criteria) this;
+        }
+
+        public Criteria andRepetitionNotEqualTo(Integer value) {
+            addCriterion("Repetition <>", value, "repetition");
+            return (Criteria) this;
+        }
+
+        public Criteria andRepetitionGreaterThan(Integer value) {
+            addCriterion("Repetition >", value, "repetition");
+            return (Criteria) this;
+        }
+
+        public Criteria andRepetitionGreaterThanOrEqualTo(Integer value) {
+            addCriterion("Repetition >=", value, "repetition");
+            return (Criteria) this;
+        }
+
+        public Criteria andRepetitionLessThan(Integer value) {
+            addCriterion("Repetition <", value, "repetition");
+            return (Criteria) this;
+        }
+
+        public Criteria andRepetitionLessThanOrEqualTo(Integer value) {
+            addCriterion("Repetition <=", value, "repetition");
+            return (Criteria) this;
+        }
+
+        public Criteria andRepetitionIn(List<Integer> values) {
+            addCriterion("Repetition in", values, "repetition");
+            return (Criteria) this;
+        }
+
+        public Criteria andRepetitionNotIn(List<Integer> values) {
+            addCriterion("Repetition not in", values, "repetition");
+            return (Criteria) this;
+        }
+
+        public Criteria andRepetitionBetween(Integer value1, Integer value2) {
+            addCriterion("Repetition between", value1, value2, "repetition");
+            return (Criteria) this;
+        }
+
+        public Criteria andRepetitionNotBetween(Integer value1, Integer value2) {
+            addCriterion("Repetition not between", value1, value2, "repetition");
             return (Criteria) this;
         }
     }
