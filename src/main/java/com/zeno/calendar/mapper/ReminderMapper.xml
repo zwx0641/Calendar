@@ -9,7 +9,7 @@
     <result column="email" jdbcType="CHAR" property="email" />
     <result column="Remind_Text" jdbcType="CHAR" property="remindText" />
     <result column="Remind_Day" jdbcType="DATE" property="remindDay" />
-    <result column="Remind_Time" jdbcType="TIME" property="remindTime" />
+    <result column="Remind_Time" jdbcType="TIMESTAMP" property="remindTime" />
     <result column="Repetition" jdbcType="INTEGER" property="repetition" />
   </resultMap>
   <sql id="Example_Where_Clause">
@@ -136,7 +136,7 @@
         Remind_Day = #{record.remindDay,jdbcType=DATE},
       </if>
       <if test="record.remindTime != null">
-        Remind_Time = #{record.remindTime,jdbcType=TIME},
+        Remind_Time = #{record.remindTime,jdbcType=TIMESTAMP},
       </if>
       <if test="record.repetition != null">
         Repetition = #{record.repetition,jdbcType=INTEGER},
@@ -155,7 +155,7 @@
       email = #{record.email,jdbcType=CHAR},
       Remind_Text = #{record.remindText,jdbcType=CHAR},
       Remind_Day = #{record.remindDay,jdbcType=DATE},
-      Remind_Time = #{record.remindTime,jdbcType=TIME},
+      Remind_Time = #{record.remindTime,jdbcType=TIMESTAMP},
       Repetition = #{record.repetition,jdbcType=INTEGER}
     <if test="_parameter != null">
       <include refid="Update_By_Example_Where_Clause" />

@@ -132,32 +132,6 @@ public class ReminderExample {
             addCriterion(condition, new java.sql.Date(value1.getTime()), new java.sql.Date(value2.getTime()), property);
         }
 
-        protected void addCriterionForJDBCTime(String condition, Date value, String property) {
-            if (value == null) {
-                throw new RuntimeException("Value for " + property + " cannot be null");
-            }
-            addCriterion(condition, new java.sql.Time(value.getTime()), property);
-        }
-
-        protected void addCriterionForJDBCTime(String condition, List<Date> values, String property) {
-            if (values == null || values.size() == 0) {
-                throw new RuntimeException("Value list for " + property + " cannot be null or empty");
-            }
-            List<java.sql.Time> timeList = new ArrayList<java.sql.Time>();
-            Iterator<Date> iter = values.iterator();
-            while (iter.hasNext()) {
-                timeList.add(new java.sql.Time(iter.next().getTime()));
-            }
-            addCriterion(condition, timeList, property);
-        }
-
-        protected void addCriterionForJDBCTime(String condition, Date value1, Date value2, String property) {
-            if (value1 == null || value2 == null) {
-                throw new RuntimeException("Between values for " + property + " cannot be null");
-            }
-            addCriterion(condition, new java.sql.Time(value1.getTime()), new java.sql.Time(value2.getTime()), property);
-        }
-
         public Criteria andIdIsNull() {
             addCriterion("ID is null");
             return (Criteria) this;
@@ -439,52 +413,52 @@ public class ReminderExample {
         }
 
         public Criteria andRemindTimeEqualTo(Date value) {
-            addCriterionForJDBCTime("Remind_Time =", value, "remindTime");
+            addCriterion("Remind_Time =", value, "remindTime");
             return (Criteria) this;
         }
 
         public Criteria andRemindTimeNotEqualTo(Date value) {
-            addCriterionForJDBCTime("Remind_Time <>", value, "remindTime");
+            addCriterion("Remind_Time <>", value, "remindTime");
             return (Criteria) this;
         }
 
         public Criteria andRemindTimeGreaterThan(Date value) {
-            addCriterionForJDBCTime("Remind_Time >", value, "remindTime");
+            addCriterion("Remind_Time >", value, "remindTime");
             return (Criteria) this;
         }
 
         public Criteria andRemindTimeGreaterThanOrEqualTo(Date value) {
-            addCriterionForJDBCTime("Remind_Time >=", value, "remindTime");
+            addCriterion("Remind_Time >=", value, "remindTime");
             return (Criteria) this;
         }
 
         public Criteria andRemindTimeLessThan(Date value) {
-            addCriterionForJDBCTime("Remind_Time <", value, "remindTime");
+            addCriterion("Remind_Time <", value, "remindTime");
             return (Criteria) this;
         }
 
         public Criteria andRemindTimeLessThanOrEqualTo(Date value) {
-            addCriterionForJDBCTime("Remind_Time <=", value, "remindTime");
+            addCriterion("Remind_Time <=", value, "remindTime");
             return (Criteria) this;
         }
 
         public Criteria andRemindTimeIn(List<Date> values) {
-            addCriterionForJDBCTime("Remind_Time in", values, "remindTime");
+            addCriterion("Remind_Time in", values, "remindTime");
             return (Criteria) this;
         }
 
         public Criteria andRemindTimeNotIn(List<Date> values) {
-            addCriterionForJDBCTime("Remind_Time not in", values, "remindTime");
+            addCriterion("Remind_Time not in", values, "remindTime");
             return (Criteria) this;
         }
 
         public Criteria andRemindTimeBetween(Date value1, Date value2) {
-            addCriterionForJDBCTime("Remind_Time between", value1, value2, "remindTime");
+            addCriterion("Remind_Time between", value1, value2, "remindTime");
             return (Criteria) this;
         }
 
         public Criteria andRemindTimeNotBetween(Date value1, Date value2) {
-            addCriterionForJDBCTime("Remind_Time not between", value1, value2, "remindTime");
+            addCriterion("Remind_Time not between", value1, value2, "remindTime");
             return (Criteria) this;
         }
 

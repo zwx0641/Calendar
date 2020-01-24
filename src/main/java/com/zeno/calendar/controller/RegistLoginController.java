@@ -24,7 +24,7 @@ public class RegistLoginController extends BasicController {
 
         //1. Username, password not empty
         if (StringUtils.isEmpty(user.getUsername()) || StringUtils.isEmpty(user.getPassword())) {
-            return IMoocJSONResult.errorMap("Username or password cannot be empty");
+            return IMoocJSONResult.errorMsg("Username or password cannot be empty");
         }
         //2. Username existing?
         boolean isExist = userService.queryEmailIsExist(user.getEmail());
