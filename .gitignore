@@ -31,3 +31,4 @@ target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
 target/classes/META-INF/calendar.kotlin_module
 target/surefire-reports/TEST-com.zeno.calendar.CalendarApplicationTests.xml
 .idea/workspace.xml
+.idea/workspace.xml

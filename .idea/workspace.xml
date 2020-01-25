@@ -3,12 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="c811b038-d377-47ad-abe4-07c5efeb125e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zeno/calendar/controller/RemindController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zeno/calendar/controller/RemindController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zeno/calendar/mapper/ReminderMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zeno/calendar/mapper/ReminderMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zeno/calendar/pojo/Reminder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zeno/calendar/pojo/Reminder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zeno/calendar/pojo/ReminderExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zeno/calendar/pojo/ReminderExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zeno/calendar/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zeno/calendar/service/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.zeno.calendar.CalendarApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.zeno.calendar.CalendarApplicationTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.zeno.calendar.CalendarApplicationTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.zeno.calendar.CalendarApplicationTests.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -422,7 +419,7 @@
       <workItem from="1579760687665" duration="1874000" />
       <workItem from="1579765855010" duration="152000" />
       <workItem from="1579846723534" duration="13180000" />
-      <workItem from="1579933795695" duration="7316000" />
+      <workItem from="1579933795695" duration="8138000" />
     </task>
     <task id="LOCAL-00001" summary="Add a table and a controller">
       <created>1579760246376</created>
@@ -445,7 +442,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579860429443</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Fix 8 hours bug, change database design">
+      <created>1579943867902</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1579943867902</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -469,7 +473,8 @@
     <MESSAGE value="Add a table and a controller" />
     <MESSAGE value="Table altering" />
     <MESSAGE value="Backend: reminder saving, query reminder" />
-    <option name="LAST_COMMIT_MESSAGE" value="Backend: reminder saving, query reminder" />
+    <MESSAGE value="Fix 8 hours bug, change database design" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix 8 hours bug, change database design" />
   </component>
   <component name="WindowStateProjectService">
     <state x="233" y="20" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1579857246898">
@@ -485,10 +490,10 @@
     </state>
     <state x="321" y="99" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1280.720/-1920.0.1920.1080@0.0.1280.720" timestamp="1578111913296" />
     <state x="321" y="99" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1280.720@0.0.1280.720" timestamp="1579934879212" />
-    <state x="271" y="0" key="CommitChangelistDialog2" timestamp="1579943818476">
+    <state x="271" y="0" key="CommitChangelistDialog2" timestamp="1579943866952">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="271" y="0" key="CommitChangelistDialog2/0.0.1280.720@0.0.1280.720" timestamp="1579943818476" />
+    <state x="271" y="0" key="CommitChangelistDialog2/0.0.1280.720@0.0.1280.720" timestamp="1579943866952" />
     <state x="493" y="197" key="FileChooserDialogImpl" timestamp="1579761495647">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
