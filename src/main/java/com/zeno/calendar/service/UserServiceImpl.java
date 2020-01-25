@@ -43,7 +43,6 @@ public class UserServiceImpl implements UserService {
         criteria.andEqualTo("email", email);
         criteria.andEqualTo("password", password);
         User result = userMapper.selectOneByExample(userExample);
-
         return result;
     }
 

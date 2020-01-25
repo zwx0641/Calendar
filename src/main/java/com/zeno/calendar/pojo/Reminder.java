@@ -13,9 +13,6 @@ public class Reminder {
     @Column(name = "Remind_Text")
     private String remindText;
 
-    @Column(name = "Remind_Day")
-    private Date remindDay;
-
     @Column(name = "Remind_Time")
     private Date remindTime;
 
@@ -62,20 +59,6 @@ public class Reminder {
      */
     public void setRemindText(String remindText) {
         this.remindText = remindText == null ? null : remindText.trim();
-    }
-
-    /**
-     * @return Remind_Day
-     */
-    public Date getRemindDay() {
-        return remindDay;
-    }
-
-    /**
-     * @param remindDay
-     */
-    public void setRemindDay(Date remindDay) {
-        this.remindDay = remindDay;
     }
 
     /**

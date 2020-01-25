@@ -4,12 +4,13 @@ import com.zeno.calendar.pojo.Reminder;
 import com.zeno.calendar.service.ReminderService;
 import com.zeno.calendar.utils.IMoocJSONResult;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.thymeleaf.util.StringUtils;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -37,7 +38,7 @@ public class RemindController {
     @PostMapping("/queryreminder")
     public IMoocJSONResult getReminder(String email) throws Exception {
         List<Reminder> reminders = reminderService.queryReminder(email);
-
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH-mm-ss");
         return IMoocJSONResult.ok(reminders);
     }
 }
