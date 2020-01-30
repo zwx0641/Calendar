@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.RestController;
 import org.thymeleaf.util.StringUtils;
 
 import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.List;
 
 /**
@@ -38,7 +37,6 @@ public class RemindController {
     @PostMapping("/queryreminder")
     public IMoocJSONResult getReminder(String email) throws Exception {
         List<Reminder> reminders = reminderService.queryReminder(email);
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH-mm-ss");
         return IMoocJSONResult.ok(reminders);
     }
 }
