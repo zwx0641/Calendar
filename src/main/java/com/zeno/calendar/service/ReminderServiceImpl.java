@@ -38,4 +38,17 @@ public class ReminderServiceImpl implements ReminderService {
         criteria.andEqualTo("email", email);
         return reminderMapper.selectByExample(reminderExample);
     }
+
+    @Transactional(propagation = Propagation.SUPPORTS)
+    @Override
+    public boolean deleteReminder(String id) {
+        Example reminderExample = new Example(Reminder.class);
+        Example.Criteria criteria = reminderExample.createCriteria();
+        criteria.andEqualTo("id", id);
+        List<Reminder> reminderList = reminderMapper.selectByExample(reminderExample);
+        for (Reminder reminder : reminderList) {
+            reminderMapper.delete(reminder);
+        }
+        return true;
+    }
 }

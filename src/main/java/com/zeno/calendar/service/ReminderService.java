@@ -20,4 +20,10 @@ public interface ReminderService {
      * @return reminder
      */
     List<Reminder> queryReminder(String email);
+
+    /**
+     *
+     * @param id
+     */
+    boolean deleteReminder(String id);
 }

@@ -39,4 +39,12 @@ public class RemindController {
         List<Reminder> reminders = reminderService.queryReminder(email);
         return IMoocJSONResult.ok(reminders);
     }
+
+    @PostMapping("/dropreminder")
+    public IMoocJSONResult dropReminder(String id) throws Exception {
+        if (reminderService.deleteReminder(id)) {
+            return IMoocJSONResult.ok();
+        }
+        return IMoocJSONResult.errorMsg("error");
+    }
 }
