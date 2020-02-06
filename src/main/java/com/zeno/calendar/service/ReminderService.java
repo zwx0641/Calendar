@@ -26,4 +26,11 @@ public interface ReminderService {
      * @param id
      */
     boolean deleteReminder(String id);
+
+    /**
+     *
+     * @param id
+     * @return
+     */
+    boolean updateTime(String id);
 }

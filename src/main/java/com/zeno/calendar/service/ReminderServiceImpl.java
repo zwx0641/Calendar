@@ -9,6 +9,8 @@ import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 import tk.mybatis.mapper.entity.Example;
 
+import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -51,4 +53,44 @@ public class ReminderServiceImpl implements ReminderService {
         }
         return true;
     }
+
+    @Transactional(propagation = Propagation.SUPPORTS)
+    @Override
+    public boolean updateTime(String id) {
+        Example reminderExample = new Example(Reminder.class);
+        Example.Criteria criteria = reminderExample.createCriteria();
+        criteria.andEqualTo("id", id);
+        List<Reminder> reminderList = reminderMapper.selectByExample(reminderExample);
+
+        // Judget repetition type and update the next remindTime according to the type
+        for (Reminder reminder : reminderList) {
+            Reminder updater = new Reminder();
+            Calendar calendar = Calendar.getInstance();
+            calendar.setTime(reminder.getRemindTime());
+            switch (reminder.getRepetition()) {
+                case 1:
+                    updater.setRemindTime(new Date(reminder.getRemindTime().getTime() + 24*60*60*1000));
+                    reminderMapper.updateByExampleSelective(updater, reminderExample);
+                    break;
+                case 2:
+                    updater.setRemindTime(new Date(reminder.getRemindTime().getTime() + 24*60*60*1000*7));
+                    reminderMapper.updateByExampleSelective(updater, reminderExample);
+                    break;
+                case 3:
+                    calendar.add(Calendar.MONTH, 1);
+                    updater.setRemindTime(calendar.getTime());
+                    reminderMapper.updateByExampleSelective(updater, reminderExample);
+                    break;
+                case 4:
+                    calendar.add(Calendar.YEAR, 1);
+                    updater.setRemindTime(calendar.getTime());
+                    reminderMapper.updateByExampleSelective(updater, reminderExample);
+                    break;
+            }
+        }
+
+        return true;
+    }
+
+
 }

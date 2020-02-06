@@ -47,4 +47,12 @@ public class RemindController {
         }
         return IMoocJSONResult.errorMsg("error");
     }
+
+    @PostMapping("/updatereminder")
+    public IMoocJSONResult updateReminder(String id) throws Exception {
+        if (reminderService.updateTime(id)) {
+            return IMoocJSONResult.ok();
+        }
+        return IMoocJSONResult.errorMsg("error");
+    }
 }
