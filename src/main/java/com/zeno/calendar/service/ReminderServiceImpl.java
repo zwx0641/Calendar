@@ -92,5 +92,14 @@ public class ReminderServiceImpl implements ReminderService {
         return true;
     }
 
+    @Override
+    public List<Reminder> getDetailsOfReminder(String email, String remindText) {
+        Example reminderExample = new Example(Reminder.class);
+        Example.Criteria criteria = reminderExample.createCriteria();
+        criteria.andEqualTo("email", email).andEqualTo("remindText", remindText);
+        List<Reminder> reminderList = reminderMapper.selectByExample(reminderExample);
+        return reminderList;
+    }
+
 
 }

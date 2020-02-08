@@ -33,4 +33,11 @@ public interface ReminderService {
      * @return
      */
     boolean updateTime(String id);
+
+    /**
+     *
+     * @param email
+     * @param remindText
+     */
+    List<Reminder> getDetailsOfReminder(String email, String remindText);
 }

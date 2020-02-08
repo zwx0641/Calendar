@@ -34,12 +34,27 @@ public class RemindController {
         return IMoocJSONResult.ok();
     }
 
+    /**
+     * Get reminders according to user email
+     * @param email
+     * @return
+     * @throws Exception
+     */
     @PostMapping("/queryreminder")
     public IMoocJSONResult getReminder(String email) throws Exception {
         List<Reminder> reminders = reminderService.queryReminder(email);
-        return IMoocJSONResult.ok(reminders);
+        if (!reminders.isEmpty()) {
+            return IMoocJSONResult.ok(reminders);
+        }
+        return IMoocJSONResult.errorMsg("Unable to find a reminder");
     }
 
+    /**
+     * Delete a reminder according to its id
+     * @param id
+     * @return if it is successful
+     * @throws Exception
+     */
     @PostMapping("/dropreminder")
     public IMoocJSONResult dropReminder(String id) throws Exception {
         if (reminderService.deleteReminder(id)) {
@@ -48,11 +63,32 @@ public class RemindController {
         return IMoocJSONResult.errorMsg("error");
     }
 
+    /**
+     * update a reminder according to its id
+     * @param id
+     * @return
+     * @throws Exception
+     */
     @PostMapping("/updatereminder")
     public IMoocJSONResult updateReminder(String id) throws Exception {
         if (reminderService.updateTime(id)) {
             return IMoocJSONResult.ok();
         }
         return IMoocJSONResult.errorMsg("error");
+    }
+
+    /**
+     * Get the details of a reminder
+     * @param email
+     * @param remindText
+     * @return
+     */
+    @PostMapping("/detailreminder")
+    public IMoocJSONResult detailReminder(String email, String remindText) {
+        List<Reminder> reminders = reminderService.getDetailsOfReminder(email,remindText);
+        if (!reminders.isEmpty()) {
+            return IMoocJSONResult.ok(reminders);
+        }
+        return IMoocJSONResult.errorMsg("Unable to find a reminder");
     }
 }
