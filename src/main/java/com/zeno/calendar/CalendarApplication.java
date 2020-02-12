@@ -7,7 +7,7 @@ import tk.mybatis.spring.annotation.MapperScan;
 
 @SpringBootApplication
 @MapperScan(basePackages = "com.zeno.calendar.mapper")
-@ComponentScan(basePackages= {"com.zeno", "com.zeno.calendar.utils"})
+@ComponentScan(basePackages= {"com.zeno", "com.zeno.calendar.utils", "com.zeno.calendar.service"})
 public class CalendarApplication {
 
     public static void main(String[] args) {

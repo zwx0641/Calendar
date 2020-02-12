@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c811b038-d377-47ad-abe4-07c5efeb125e" name="Default Changelist" comment="">
+    <list default="true" id="c811b038-d377-47ad-abe4-07c5efeb125e" name="Default Changelist" comment="Support reminder details front end">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zeno/calendar/controller/EventController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zeno/calendar/mapper/EventMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zeno/calendar/mapper/EventMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zeno/calendar/pojo/Event.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zeno/calendar/pojo/EventExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zeno/calendar/service/EventService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zeno/calendar/service/EventServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/generatorConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zeno/calendar/CalendarApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zeno/calendar/CalendarApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/zeno/calendar/controller/RemindController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zeno/calendar/controller/RemindController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zeno/calendar/service/ReminderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zeno/calendar/service/ReminderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zeno/calendar/service/ReminderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zeno/calendar/service/ReminderServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,8 +55,8 @@
         <option value="Enum" />
         <option value="Tag Library Descriptor" />
         <option value="spring-beans.schema" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -100,7 +107,7 @@
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
@@ -425,7 +432,12 @@
       <workItem from="1580531250115" duration="1524000" />
       <workItem from="1580626229386" duration="4377000" />
       <workItem from="1580963006851" duration="5537000" />
-      <workItem from="1581141085331" duration="2623000" />
+      <workItem from="1581141085331" duration="3224000" />
+      <workItem from="1581151099170" duration="205000" />
+      <workItem from="1581225823179" duration="1956000" />
+      <workItem from="1581234801891" duration="3407000" />
+      <workItem from="1581395725229" duration="1834000" />
+      <workItem from="1581483716715" duration="5352000" />
     </task>
     <task id="LOCAL-00001" summary="Add a table and a controller">
       <created>1579760246376</created>
@@ -476,7 +488,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580968001329</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Support reminder details front end">
+      <created>1581148960274</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1581148960274</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -504,67 +523,68 @@
     <MESSAGE value="Read reminders from database and present them" />
     <MESSAGE value="Delete reminder" />
     <MESSAGE value="Judge reminder type and corresponding operations" />
-    <option name="LAST_COMMIT_MESSAGE" value="Judge reminder type and corresponding operations" />
+    <MESSAGE value="Support reminder details front end" />
+    <option name="LAST_COMMIT_MESSAGE" value="Support reminder details front end" />
   </component>
   <component name="WindowStateProjectService">
     <state x="233" y="20" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1579857246898">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="233" y="20" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.720@0.0.1280.720" timestamp="1579857246898" />
-    <state x="446" y="65" key="#com.intellij.ide.util.MemberChooser" timestamp="1581142413530">
+    <state x="446" y="65" key="#com.intellij.ide.util.MemberChooser" timestamp="1581494566204">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="446" y="65" key="#com.intellij.ide.util.MemberChooser/0.0.1280.720@0.0.1280.720" timestamp="1581142413530" />
+    <state x="446" y="65" key="#com.intellij.ide.util.MemberChooser/0.0.1280.720@0.0.1280.720" timestamp="1581494566204" />
     <state x="321" y="99" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1579934879212">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="321" y="99" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1280.720/-1920.0.1920.1080@0.0.1280.720" timestamp="1578111913296" />
     <state x="321" y="99" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1280.720@0.0.1280.720" timestamp="1579934879212" />
-    <state x="271" y="0" key="CommitChangelistDialog2" timestamp="1580967999854">
+    <state x="271" y="0" key="CommitChangelistDialog2" timestamp="1581239244234">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="271" y="0" key="CommitChangelistDialog2/0.0.1280.720@0.0.1280.720" timestamp="1580967999854" />
+    <state x="271" y="0" key="CommitChangelistDialog2/0.0.1280.720@0.0.1280.720" timestamp="1581239244234" />
     <state width="416" height="618" key="DebuggerActiveHint" timestamp="1580965585413">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state width="416" height="618" key="DebuggerActiveHint/0.0.1280.720@0.0.1280.720" timestamp="1580965585413" />
-    <state x="493" y="197" key="FileChooserDialogImpl" timestamp="1579761495647">
+    <state x="493" y="197" key="FileChooserDialogImpl" timestamp="1581234933968">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="-1180" y="296" key="FileChooserDialogImpl/0.0.1280.720/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1579224306753" />
-    <state x="493" y="197" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1579761495647" />
-    <state width="1237" height="221" key="GridCell.Tab.0.bottom" timestamp="1581146971093">
+    <state x="493" y="197" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1581234933968" />
+    <state width="1239" height="221" key="GridCell.Tab.0.bottom" timestamp="1581495892901">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="221" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1581146971093" />
-    <state width="1237" height="221" key="GridCell.Tab.0.center" timestamp="1581146971093">
+    <state width="1239" height="221" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1581495892901" />
+    <state width="1239" height="221" key="GridCell.Tab.0.center" timestamp="1581495892901">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="221" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1581146971093" />
-    <state width="1237" height="221" key="GridCell.Tab.0.left" timestamp="1581146971092">
+    <state width="1239" height="221" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1581495892901" />
+    <state width="1239" height="221" key="GridCell.Tab.0.left" timestamp="1581495892901">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="221" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1581146971092" />
-    <state width="1237" height="221" key="GridCell.Tab.0.right" timestamp="1581146971093">
+    <state width="1239" height="221" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1581495892901" />
+    <state width="1239" height="221" key="GridCell.Tab.0.right" timestamp="1581495892901">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="221" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1581146971093" />
-    <state width="1237" height="221" key="GridCell.Tab.1.bottom" timestamp="1581146971093">
+    <state width="1239" height="221" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1581495892901" />
+    <state width="1239" height="221" key="GridCell.Tab.1.bottom" timestamp="1581495892901">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="221" key="GridCell.Tab.1.bottom/0.0.1280.720@0.0.1280.720" timestamp="1581146971093" />
-    <state width="1237" height="221" key="GridCell.Tab.1.center" timestamp="1581146971093">
+    <state width="1239" height="221" key="GridCell.Tab.1.bottom/0.0.1280.720@0.0.1280.720" timestamp="1581495892901" />
+    <state width="1239" height="221" key="GridCell.Tab.1.center" timestamp="1581495892901">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="221" key="GridCell.Tab.1.center/0.0.1280.720@0.0.1280.720" timestamp="1581146971093" />
-    <state width="1237" height="221" key="GridCell.Tab.1.left" timestamp="1581146971093">
+    <state width="1239" height="221" key="GridCell.Tab.1.center/0.0.1280.720@0.0.1280.720" timestamp="1581495892901" />
+    <state width="1239" height="221" key="GridCell.Tab.1.left" timestamp="1581495892901">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="221" key="GridCell.Tab.1.left/0.0.1280.720@0.0.1280.720" timestamp="1581146971093" />
-    <state width="1237" height="221" key="GridCell.Tab.1.right" timestamp="1581146971093">
+    <state width="1239" height="221" key="GridCell.Tab.1.left/0.0.1280.720@0.0.1280.720" timestamp="1581495892901" />
+    <state width="1239" height="221" key="GridCell.Tab.1.right" timestamp="1581495892901">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="221" key="GridCell.Tab.1.right/0.0.1280.720@0.0.1280.720" timestamp="1581146971093" />
+    <state width="1239" height="221" key="GridCell.Tab.1.right/0.0.1280.720@0.0.1280.720" timestamp="1581495892901" />
     <state width="186" height="538" key="HiddenNamespacesPopup" timestamp="1579857163102">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -573,12 +593,12 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="421" y="167" key="RestClientTextRequest/0.0.1280.720@0.0.1280.720" timestamp="1579852867757" />
-    <state x="79" y="9" key="SettingsEditor" timestamp="1580367181464">
+    <state x="150" y="5" key="SettingsEditor" timestamp="1581396298924">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="-1695" y="8" key="SettingsEditor/0.0.1280.720/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1579224522895" />
     <state x="150" y="5" key="SettingsEditor/0.0.1280.720/-1920.0.1920.1080@0.0.1280.720" timestamp="1578112240779" />
-    <state x="79" y="9" key="SettingsEditor/0.0.1280.720@0.0.1280.720" timestamp="1580367181464" />
+    <state x="150" y="5" key="SettingsEditor/0.0.1280.720@0.0.1280.720" timestamp="1581396298924" />
     <state x="297" y="161" width="672" height="677" key="run.anything.popup" timestamp="1579943678022">
       <screen x="0" y="0" width="1280" height="720" />
     </state>

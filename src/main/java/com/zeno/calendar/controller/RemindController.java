@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.thymeleaf.util.StringUtils;
 
-import java.text.SimpleDateFormat;
 import java.util.List;
 
 /**
@@ -36,7 +35,7 @@ public class RemindController {
 
     /**
      * Get reminders according to user email
-     * @param email
+     * @param email 
      * @return
      * @throws Exception
      */
