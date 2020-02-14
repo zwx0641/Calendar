@@ -13,6 +13,7 @@
     <result column="from_time" jdbcType="TIMESTAMP" property="fromTime" />
     <result column="end_time" jdbcType="TIMESTAMP" property="endTime" />
     <result column="repetition" jdbcType="INTEGER" property="repetition" />
+    <result column="event_type" jdbcType="INTEGER" property="eventType" />
   </resultMap>
   <sql id="Example_Where_Clause">
     <!--
@@ -82,7 +83,7 @@
     <!--
       WARNING - @mbg.generated
     -->
-    ID, email, event_name, location, remark, from_time, end_time, repetition
+    ID, email, event_name, location, remark, from_time, end_time, repetition, event_type
   </sql>
   <select id="selectByExample" parameterType="com.zeno.calendar.pojo.EventExample" resultMap="BaseResultMap">
     <!--
@@ -149,6 +150,9 @@
       <if test="record.repetition != null">
         repetition = #{record.repetition,jdbcType=INTEGER},
       </if>
+      <if test="record.eventType != null">
+        event_type = #{record.eventType,jdbcType=INTEGER},
+      </if>
     </set>
     <if test="_parameter != null">
       <include refid="Update_By_Example_Where_Clause" />
@@ -166,7 +170,8 @@
       remark = #{record.remark,jdbcType=CHAR},
       from_time = #{record.fromTime,jdbcType=TIMESTAMP},
       end_time = #{record.endTime,jdbcType=TIMESTAMP},
-      repetition = #{record.repetition,jdbcType=INTEGER}
+      repetition = #{record.repetition,jdbcType=INTEGER},
+      event_type = #{record.eventType,jdbcType=INTEGER}
     <if test="_parameter != null">
       <include refid="Update_By_Example_Where_Clause" />
     </if>

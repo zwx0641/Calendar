@@ -634,6 +634,66 @@ public class EventExample {
             addCriterion("repetition not between", value1, value2, "repetition");
             return (Criteria) this;
         }
+
+        public Criteria andEventTypeIsNull() {
+            addCriterion("event_type is null");
+            return (Criteria) this;
+        }
+
+        public Criteria andEventTypeIsNotNull() {
+            addCriterion("event_type is not null");
+            return (Criteria) this;
+        }
+
+        public Criteria andEventTypeEqualTo(Integer value) {
+            addCriterion("event_type =", value, "eventType");
+            return (Criteria) this;
+        }
+
+        public Criteria andEventTypeNotEqualTo(Integer value) {
+            addCriterion("event_type <>", value, "eventType");
+            return (Criteria) this;
+        }
+
+        public Criteria andEventTypeGreaterThan(Integer value) {
+            addCriterion("event_type >", value, "eventType");
+            return (Criteria) this;
+        }
+
+        public Criteria andEventTypeGreaterThanOrEqualTo(Integer value) {
+            addCriterion("event_type >=", value, "eventType");
+            return (Criteria) this;
+        }
+
+        public Criteria andEventTypeLessThan(Integer value) {
+            addCriterion("event_type <", value, "eventType");
+            return (Criteria) this;
+        }
+
+        public Criteria andEventTypeLessThanOrEqualTo(Integer value) {
+            addCriterion("event_type <=", value, "eventType");
+            return (Criteria) this;
+        }
+
+        public Criteria andEventTypeIn(List<Integer> values) {
+            addCriterion("event_type in", values, "eventType");
+            return (Criteria) this;
+        }
+
+        public Criteria andEventTypeNotIn(List<Integer> values) {
+            addCriterion("event_type not in", values, "eventType");
+            return (Criteria) this;
+        }
+
+        public Criteria andEventTypeBetween(Integer value1, Integer value2) {
+            addCriterion("event_type between", value1, value2, "eventType");
+            return (Criteria) this;
+        }
+
+        public Criteria andEventTypeNotBetween(Integer value1, Integer value2) {
+            addCriterion("event_type not between", value1, value2, "eventType");
+            return (Criteria) this;
+        }
     }
 
     public static class Criteria extends GeneratedCriteria {

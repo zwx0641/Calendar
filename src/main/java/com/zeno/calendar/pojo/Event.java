@@ -26,6 +26,9 @@ public class Event {
 
     private Integer repetition;
 
+    @Column(name = "event_type")
+    private Integer eventType;
+
     /**
      * @return ID
      */
@@ -136,5 +139,19 @@ public class Event {
      */
     public void setRepetition(Integer repetition) {
         this.repetition = repetition;
+    }
+
+    /**
+     * @return event_type
+     */
+    public Integer getEventType() {
+        return eventType;
+    }
+
+    /**
+     * @param eventType
+     */
+    public void setEventType(Integer eventType) {
+        this.eventType = eventType;
     }
 }

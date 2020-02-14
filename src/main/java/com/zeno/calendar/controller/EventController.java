@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.thymeleaf.util.StringUtils;
 
+import java.util.Comparator;
 import java.util.List;
 
 /**
@@ -35,7 +36,14 @@ public class EventController {
     @PostMapping("/queryevent")
     public IMoocJSONResult queryEvent(String email) {
         List<Event> eventList = eventService.getEvent(email);
+
         if (!eventList.isEmpty()) {
+            eventList.sort(new Comparator<Event>() {
+                @Override
+                public int compare(Event o1, Event o2) {
+                    return o1.getFromTime().compareTo(o2.getFromTime());
+                }
+            });
             return IMoocJSONResult.ok(eventList);
         }
         return IMoocJSONResult.errorMsg("Unable to find an event.");
