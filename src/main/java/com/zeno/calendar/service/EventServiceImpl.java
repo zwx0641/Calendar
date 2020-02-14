@@ -7,6 +7,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
+import tk.mybatis.mapper.entity.Example;
+
+import java.util.List;
 
 @Service
 public class EventServiceImpl implements EventService {
@@ -22,5 +25,14 @@ public class EventServiceImpl implements EventService {
         String eventId = sid.nextShort();
         event.setId(eventId);
         eventMapper.insert(event);
+    }
+
+    @Transactional(propagation = Propagation.SUPPORTS)
+    @Override
+    public List<Event> getEvent(String email) {
+        Example eventExample = new Example(Event.class);
+        Example.Criteria criteria = eventExample.createCriteria();
+        criteria.andEqualTo("email", email);
+        return eventMapper.selectByExample(eventExample);
     }
 }

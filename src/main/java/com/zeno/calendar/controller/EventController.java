@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.thymeleaf.util.StringUtils;
 
+import java.util.List;
+
 /**
  * @author rf
  */
@@ -28,5 +30,14 @@ public class EventController {
         eventService.insertEvent(event);
 
         return IMoocJSONResult.ok();
+    }
+
+    @PostMapping("/queryevent")
+    public IMoocJSONResult queryEvent(String email) {
+        List<Event> eventList = eventService.getEvent(email);
+        if (!eventList.isEmpty()) {
+            return IMoocJSONResult.ok(eventList);
+        }
+        return IMoocJSONResult.errorMsg("Unable to find an event.");
     }
 }
