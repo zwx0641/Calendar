@@ -48,4 +48,18 @@ public class EventController {
         }
         return IMoocJSONResult.errorMsg("Unable to find an event.");
     }
+
+    @PostMapping("/dropevent")
+    public IMoocJSONResult dropEvent(String id) {
+        eventService.deleteEvent(id);
+        return IMoocJSONResult.ok();
+    }
+
+    @PostMapping("/detailevent")
+    public IMoocJSONResult detailReminder(String id) {
+        if (eventService.getDetailsOfEvent(id) == null) {
+            return IMoocJSONResult.errorMsg("Unable to find an event");
+        }
+        return IMoocJSONResult.ok(eventService.getDetailsOfEvent(id));
+    }
 }

@@ -17,4 +17,13 @@ public interface EventService {
      * @return
      */
     List<Event> getEvent(String email);
+
+    /**
+     *
+     * @param id
+     * @return
+     */
+    void deleteEvent(String id);
+
+    List<Event> getDetailsOfEvent(String id);
 }

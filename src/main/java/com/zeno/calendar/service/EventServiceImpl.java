@@ -35,4 +35,21 @@ public class EventServiceImpl implements EventService {
         criteria.andEqualTo("email", email);
         return eventMapper.selectByExample(eventExample);
     }
+
+    @Transactional(propagation = Propagation.SUPPORTS)
+    @Override
+    public void deleteEvent(String id) {
+        Example eventExample = new Example(Event.class);
+        Example.Criteria criteria = eventExample.createCriteria();
+        criteria.andEqualTo("id", id);
+        eventMapper.deleteByExample(eventExample);
+    }
+
+    @Override
+    public List<Event> getDetailsOfEvent(String id) {
+        Example eventExample = new Example(Event.class);
+        Example.Criteria criteria = eventExample.createCriteria();
+        criteria.andEqualTo("id", id);
+        return eventMapper.selectByExample(eventExample);
+    }
 }

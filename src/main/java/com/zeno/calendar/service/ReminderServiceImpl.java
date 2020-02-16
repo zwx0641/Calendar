@@ -100,6 +100,4 @@ public class ReminderServiceImpl implements ReminderService {
         List<Reminder> reminderList = reminderMapper.selectByExample(reminderExample);
         return reminderList;
     }
-
-
 }
