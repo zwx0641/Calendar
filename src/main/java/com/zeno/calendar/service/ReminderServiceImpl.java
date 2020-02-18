@@ -62,6 +62,10 @@ public class ReminderServiceImpl implements ReminderService {
         criteria.andEqualTo("id", id);
         List<Reminder> reminderList = reminderMapper.selectByExample(reminderExample);
 
+        if (reminderList.isEmpty()) {
+            return false;
+        }
+
         // Judget repetition type and update the next remindTime according to the type
         for (Reminder reminder : reminderList) {
             Reminder updater = new Reminder();
@@ -86,12 +90,14 @@ public class ReminderServiceImpl implements ReminderService {
                     updater.setRemindTime(calendar.getTime());
                     reminderMapper.updateByExampleSelective(updater, reminderExample);
                     break;
+                default:
             }
         }
 
         return true;
     }
 
+    @Transactional(propagation = Propagation.SUPPORTS)
     @Override
     public List<Reminder> getDetailsOfReminder(String email, String remindText) {
         Example reminderExample = new Example(Reminder.class);

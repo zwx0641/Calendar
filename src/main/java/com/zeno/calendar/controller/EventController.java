@@ -37,6 +37,7 @@ public class EventController {
     public IMoocJSONResult queryEvent(String email) {
         List<Event> eventList = eventService.getEvent(email);
 
+        // Sort events according to time
         if (!eventList.isEmpty()) {
             eventList.sort(new Comparator<Event>() {
                 @Override
@@ -61,5 +62,13 @@ public class EventController {
             return IMoocJSONResult.errorMsg("Unable to find an event");
         }
         return IMoocJSONResult.ok(eventService.getDetailsOfEvent(id));
+    }
+
+    @PostMapping("/updateevent")
+    public IMoocJSONResult updateEvent(String id) {
+        if (eventService.updateEventTime(id)) {
+            return IMoocJSONResult.ok();
+        }
+        return IMoocJSONResult.errorMsg("Unable to update");
     }
 }

@@ -25,5 +25,17 @@ public interface EventService {
      */
     void deleteEvent(String id);
 
+    /**
+     *
+     * @param id
+     * @return
+     */
     List<Event> getDetailsOfEvent(String id);
+
+    /**
+     *
+     * @param id
+     * @return
+     */
+    boolean updateEventTime(String id);
 }
