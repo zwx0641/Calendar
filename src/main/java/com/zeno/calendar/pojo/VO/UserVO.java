@@ -1,10 +1,13 @@
 package com.zeno.calendar.pojo.VO;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 public class UserVO {
     private String id;
 
     private String email;
 
+    @JsonIgnore
     private String password;
 
     private String username;

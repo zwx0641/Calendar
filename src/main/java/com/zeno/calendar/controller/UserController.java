@@ -1,9 +1,11 @@
 package com.zeno.calendar.controller;
 
 import com.zeno.calendar.pojo.User;
+import com.zeno.calendar.pojo.VO.UserVO;
 import com.zeno.calendar.service.UserService;
 import com.zeno.calendar.utils.IMoocJSONResult;
 import org.apache.tomcat.util.http.fileupload.IOUtils;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
@@ -58,11 +60,11 @@ public class UserController extends BasicController {
                     IOUtils.copy(inputStream, fileOutputStream);
                 }
             } else {
-                return IMoocJSONResult.errorMsg("上传出错");
+                return IMoocJSONResult.errorMsg("Upload error");
             }
         } catch (Exception e) {
             e.printStackTrace();
-            return IMoocJSONResult.errorMsg("上传出错");
+            return IMoocJSONResult.errorMsg("Upload error");
         } finally {
             if(fileOutputStream != null) {
                 fileOutputStream.flush();
@@ -75,6 +77,19 @@ public class UserController extends BasicController {
         user.setFace_image(uploadPathDB);
         userService.updateUserInfo(user);
 
-        return IMoocJSONResult.ok();
+        return IMoocJSONResult.ok(uploadPathDB);
+    }
+
+    @PostMapping("/query")
+    public IMoocJSONResult query(String userId) {
+        if (StringUtils.isEmpty(userId)) {
+            return IMoocJSONResult.errorMsg("User cannot be empty");
+        }
+
+        User user = userService.queryUserInfo(userId);
+        UserVO userVO = new UserVO();
+        BeanUtils.copyProperties(user, userVO);
+
+        return IMoocJSONResult.ok(userVO);
     }
 }

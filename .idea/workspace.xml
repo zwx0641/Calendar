@@ -3,10 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="c811b038-d377-47ad-abe4-07c5efeb125e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zeno/calendar/controller/EventController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zeno/calendar/controller/EventController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zeno/calendar/service/EventService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zeno/calendar/service/EventService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zeno/calendar/service/EventServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zeno/calendar/service/EventServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zeno/calendar/service/ReminderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zeno/calendar/service/ReminderServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zeno/calendar/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zeno/calendar/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zeno/calendar/pojo/VO/UserVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zeno/calendar/pojo/VO/UserVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zeno/calendar/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zeno/calendar/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zeno/calendar/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zeno/calendar/service/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/calendar-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/calendar-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -436,7 +438,9 @@
       <workItem from="1581660348256" duration="5786000" />
       <workItem from="1581827987135" duration="1475000" />
       <workItem from="1581830009007" duration="2998000" />
-      <workItem from="1582001337903" duration="3529000" />
+      <workItem from="1582001337903" duration="4151000" />
+      <workItem from="1582093139226" duration="2028000" />
+      <workItem from="1582170250382" duration="8986000" />
     </task>
     <task id="LOCAL-00001" summary="Add a table and a controller">
       <created>1579760246376</created>
@@ -522,7 +526,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581837070127</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Event update">
+      <created>1582009499958</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1582009499958</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -555,17 +566,18 @@
     <MESSAGE value="Get event list" />
     <MESSAGE value="Sort events according to time" />
     <MESSAGE value="Event details &amp; delete" />
-    <option name="LAST_COMMIT_MESSAGE" value="Event details &amp; delete" />
+    <MESSAGE value="Event update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Event update" />
   </component>
   <component name="WindowStateProjectService">
     <state x="233" y="20" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1579857246898">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="233" y="20" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.720@0.0.1280.720" timestamp="1579857246898" />
-    <state x="446" y="65" key="#com.intellij.ide.util.MemberChooser" timestamp="1582001535928">
+    <state x="446" y="65" key="#com.intellij.ide.util.MemberChooser" timestamp="1582184939939">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="446" y="65" key="#com.intellij.ide.util.MemberChooser/0.0.1280.720@0.0.1280.720" timestamp="1582001535928" />
+    <state x="446" y="65" key="#com.intellij.ide.util.MemberChooser/0.0.1280.720@0.0.1280.720" timestamp="1582184939939" />
     <state x="321" y="99" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1581829822953">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -575,10 +587,10 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="387" y="187" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1280.720@0.0.1280.720" timestamp="1581829274871" />
-    <state x="271" y="0" key="CommitChangelistDialog2" timestamp="1581837068823">
+    <state x="271" y="0" key="CommitChangelistDialog2" timestamp="1582009498669">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="271" y="0" key="CommitChangelistDialog2/0.0.1280.720@0.0.1280.720" timestamp="1581837068823" />
+    <state x="271" y="0" key="CommitChangelistDialog2/0.0.1280.720@0.0.1280.720" timestamp="1582009498669" />
     <state width="416" height="618" key="DebuggerActiveHint" timestamp="1580965585413">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -588,38 +600,38 @@
     </state>
     <state x="-1180" y="296" key="FileChooserDialogImpl/0.0.1280.720/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1579224306753" />
     <state x="493" y="197" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1581234933968" />
-    <state width="1239" height="221" key="GridCell.Tab.0.bottom" timestamp="1582008934499">
+    <state width="1239" height="92" key="GridCell.Tab.0.bottom" timestamp="1582190918754">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1239" height="221" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1582008934499" />
-    <state width="1239" height="221" key="GridCell.Tab.0.center" timestamp="1582008934499">
+    <state width="1239" height="92" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1582190918754" />
+    <state width="1239" height="92" key="GridCell.Tab.0.center" timestamp="1582190918753">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1239" height="221" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1582008934499" />
-    <state width="1239" height="221" key="GridCell.Tab.0.left" timestamp="1582008934499">
+    <state width="1239" height="92" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1582190918753" />
+    <state width="1239" height="92" key="GridCell.Tab.0.left" timestamp="1582190918753">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1239" height="221" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1582008934499" />
-    <state width="1239" height="221" key="GridCell.Tab.0.right" timestamp="1582008934499">
+    <state width="1239" height="92" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1582190918753" />
+    <state width="1239" height="92" key="GridCell.Tab.0.right" timestamp="1582190918754">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1239" height="221" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1582008934499" />
-    <state width="1239" height="221" key="GridCell.Tab.1.bottom" timestamp="1582008934501">
+    <state width="1239" height="92" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1582190918754" />
+    <state width="1239" height="92" key="GridCell.Tab.1.bottom" timestamp="1582190918754">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1239" height="221" key="GridCell.Tab.1.bottom/0.0.1280.720@0.0.1280.720" timestamp="1582008934501" />
-    <state width="1239" height="221" key="GridCell.Tab.1.center" timestamp="1582008934499">
+    <state width="1239" height="92" key="GridCell.Tab.1.bottom/0.0.1280.720@0.0.1280.720" timestamp="1582190918754" />
+    <state width="1239" height="92" key="GridCell.Tab.1.center" timestamp="1582190918754">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1239" height="221" key="GridCell.Tab.1.center/0.0.1280.720@0.0.1280.720" timestamp="1582008934499" />
-    <state width="1239" height="221" key="GridCell.Tab.1.left" timestamp="1582008934499">
+    <state width="1239" height="92" key="GridCell.Tab.1.center/0.0.1280.720@0.0.1280.720" timestamp="1582190918754" />
+    <state width="1239" height="92" key="GridCell.Tab.1.left" timestamp="1582190918754">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1239" height="221" key="GridCell.Tab.1.left/0.0.1280.720@0.0.1280.720" timestamp="1582008934499" />
-    <state width="1239" height="221" key="GridCell.Tab.1.right" timestamp="1582008934501">
+    <state width="1239" height="92" key="GridCell.Tab.1.left/0.0.1280.720@0.0.1280.720" timestamp="1582190918754" />
+    <state width="1239" height="92" key="GridCell.Tab.1.right" timestamp="1582190918754">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1239" height="221" key="GridCell.Tab.1.right/0.0.1280.720@0.0.1280.720" timestamp="1582008934501" />
+    <state width="1239" height="92" key="GridCell.Tab.1.right/0.0.1280.720@0.0.1280.720" timestamp="1582190918754" />
     <state width="186" height="538" key="HiddenNamespacesPopup" timestamp="1579857163102">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -634,9 +646,9 @@
     <state x="-1695" y="8" key="SettingsEditor/0.0.1280.720/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1579224522895" />
     <state x="150" y="5" key="SettingsEditor/0.0.1280.720/-1920.0.1920.1080@0.0.1280.720" timestamp="1578112240779" />
     <state x="150" y="5" key="SettingsEditor/0.0.1280.720@0.0.1280.720" timestamp="1581396298924" />
-    <state x="297" y="161" width="672" height="677" key="run.anything.popup" timestamp="1579943678022">
+    <state x="297" y="161" width="672" height="677" key="run.anything.popup" timestamp="1582190774837">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="297" y="161" width="672" height="677" key="run.anything.popup/0.0.1280.720@0.0.1280.720" timestamp="1579943678022" />
+    <state x="297" y="161" width="672" height="677" key="run.anything.popup/0.0.1280.720@0.0.1280.720" timestamp="1582190774837" />
   </component>
 </project>
