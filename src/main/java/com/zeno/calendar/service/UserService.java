@@ -12,4 +12,5 @@ public interface UserService {
     void updateUserInfo(User user);
 
     User queryUserInfo(String userId);
+
 }

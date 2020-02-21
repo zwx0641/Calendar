@@ -4,6 +4,7 @@ import com.zeno.calendar.pojo.User;
 import com.zeno.calendar.pojo.VO.UserVO;
 import com.zeno.calendar.service.UserService;
 import com.zeno.calendar.utils.IMoocJSONResult;
+import com.zeno.calendar.utils.MD5Utils;
 import org.apache.tomcat.util.http.fileupload.IOUtils;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -91,5 +92,23 @@ public class UserController extends BasicController {
         BeanUtils.copyProperties(user, userVO);
 
         return IMoocJSONResult.ok(userVO);
+    }
+
+    @PostMapping("/passchange")
+    public IMoocJSONResult passChange(String userId, String formerPass, String newPass) throws Exception {
+        if (StringUtils.isEmpty(userId)) {
+            return IMoocJSONResult.errorMsg("User cannot be empty");
+        }
+
+        User former = userService.queryUserInfo(userId);
+        User latter = new User();
+
+        if (former.getPassword().equals(MD5Utils.getMD5Str(formerPass))) {
+            latter.setPassword(MD5Utils.getMD5Str(newPass));
+            userService.updateUserInfo(latter);
+            return IMoocJSONResult.ok();
+        } else {
+            return IMoocJSONResult.errorMsg("Wrong password");
+        }
     }
 }
