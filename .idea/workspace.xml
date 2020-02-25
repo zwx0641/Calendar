@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c811b038-d377-47ad-abe4-07c5efeb125e" name="Default Changelist" comment="">
+    <list default="true" id="c811b038-d377-47ad-abe4-07c5efeb125e" name="Default Changelist" comment="Change password">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zeno/calendar/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zeno/calendar/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zeno/calendar/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zeno/calendar/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.zeno.calendar.CalendarApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.zeno.calendar.CalendarApplicationTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.zeno.calendar.CalendarApplicationTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.zeno.calendar.CalendarApplicationTests.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zeno/calendar/controller/EventController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zeno/calendar/controller/EventController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zeno/calendar/controller/RemindController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zeno/calendar/controller/RemindController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -443,6 +439,7 @@
       <workItem from="1582170250382" duration="9435000" />
       <workItem from="1582196507916" duration="625000" />
       <workItem from="1582265120952" duration="3997000" />
+      <workItem from="1582611023461" duration="751000" />
     </task>
     <task id="LOCAL-00001" summary="Add a table and a controller">
       <created>1579760246376</created>
@@ -610,38 +607,38 @@
     </state>
     <state x="-1180" y="296" key="FileChooserDialogImpl/0.0.1280.720/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1579224306753" />
     <state x="493" y="197" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1581234933968" />
-    <state width="1239" height="197" key="GridCell.Tab.0.bottom" timestamp="1582279608295">
+    <state width="1239" height="282" key="GridCell.Tab.0.bottom" timestamp="1582611178858">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1239" height="197" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1582279608295" />
-    <state width="1239" height="197" key="GridCell.Tab.0.center" timestamp="1582279608295">
+    <state width="1239" height="282" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1582611178858" />
+    <state width="1239" height="282" key="GridCell.Tab.0.center" timestamp="1582611178858">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1239" height="197" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1582279608295" />
-    <state width="1239" height="197" key="GridCell.Tab.0.left" timestamp="1582279608295">
+    <state width="1239" height="282" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1582611178858" />
+    <state width="1239" height="282" key="GridCell.Tab.0.left" timestamp="1582611178858">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1239" height="197" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1582279608295" />
-    <state width="1239" height="197" key="GridCell.Tab.0.right" timestamp="1582279608295">
+    <state width="1239" height="282" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1582611178858" />
+    <state width="1239" height="282" key="GridCell.Tab.0.right" timestamp="1582611178858">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1239" height="197" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1582279608295" />
-    <state width="1239" height="197" key="GridCell.Tab.1.bottom" timestamp="1582279608296">
+    <state width="1239" height="282" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1582611178858" />
+    <state width="1239" height="282" key="GridCell.Tab.1.bottom" timestamp="1582611178859">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1239" height="197" key="GridCell.Tab.1.bottom/0.0.1280.720@0.0.1280.720" timestamp="1582279608296" />
-    <state width="1239" height="197" key="GridCell.Tab.1.center" timestamp="1582279608296">
+    <state width="1239" height="282" key="GridCell.Tab.1.bottom/0.0.1280.720@0.0.1280.720" timestamp="1582611178859" />
+    <state width="1239" height="282" key="GridCell.Tab.1.center" timestamp="1582611178858">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1239" height="197" key="GridCell.Tab.1.center/0.0.1280.720@0.0.1280.720" timestamp="1582279608296" />
-    <state width="1239" height="197" key="GridCell.Tab.1.left" timestamp="1582279608295">
+    <state width="1239" height="282" key="GridCell.Tab.1.center/0.0.1280.720@0.0.1280.720" timestamp="1582611178858" />
+    <state width="1239" height="282" key="GridCell.Tab.1.left" timestamp="1582611178858">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1239" height="197" key="GridCell.Tab.1.left/0.0.1280.720@0.0.1280.720" timestamp="1582279608295" />
-    <state width="1239" height="197" key="GridCell.Tab.1.right" timestamp="1582279608296">
+    <state width="1239" height="282" key="GridCell.Tab.1.left/0.0.1280.720@0.0.1280.720" timestamp="1582611178858" />
+    <state width="1239" height="282" key="GridCell.Tab.1.right" timestamp="1582611178859">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1239" height="197" key="GridCell.Tab.1.right/0.0.1280.720@0.0.1280.720" timestamp="1582279608296" />
+    <state width="1239" height="282" key="GridCell.Tab.1.right/0.0.1280.720@0.0.1280.720" timestamp="1582611178859" />
     <state width="186" height="538" key="HiddenNamespacesPopup" timestamp="1579857163102">
       <screen x="0" y="0" width="1280" height="720" />
     </state>

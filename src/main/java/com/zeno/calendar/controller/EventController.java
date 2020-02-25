@@ -6,6 +6,7 @@ import com.zeno.calendar.utils.IMoocJSONResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.thymeleaf.util.StringUtils;
 
@@ -16,11 +17,12 @@ import java.util.List;
  * @author rf
  */
 @RestController
+@RequestMapping("/event")
 public class EventController {
     @Autowired
     private EventService eventService;
 
-    @PostMapping("/saveevent")
+    @PostMapping("/save")
     public IMoocJSONResult saveEvent(@RequestBody Event event) {
         // 1.If belongs to no user, remind user to login
         if (StringUtils.isEmpty(event.getEmail())) {
@@ -33,7 +35,7 @@ public class EventController {
         return IMoocJSONResult.ok();
     }
 
-    @PostMapping("/queryevent")
+    @PostMapping("/query")
     public IMoocJSONResult queryEvent(String email) {
         List<Event> eventList = eventService.getEvent(email);
 
@@ -50,13 +52,13 @@ public class EventController {
         return IMoocJSONResult.errorMsg("Unable to find an event.");
     }
 
-    @PostMapping("/dropevent")
+    @PostMapping("/drop")
     public IMoocJSONResult dropEvent(String id) {
         eventService.deleteEvent(id);
         return IMoocJSONResult.ok();
     }
 
-    @PostMapping("/detailevent")
+    @PostMapping("/detail")
     public IMoocJSONResult detailReminder(String id) {
         if (eventService.getDetailsOfEvent(id) == null) {
             return IMoocJSONResult.errorMsg("Unable to find an event");
@@ -64,7 +66,7 @@ public class EventController {
         return IMoocJSONResult.ok(eventService.getDetailsOfEvent(id));
     }
 
-    @PostMapping("/updateevent")
+    @PostMapping("/update")
     public IMoocJSONResult updateEvent(String id) {
         if (eventService.updateEventTime(id)) {
             return IMoocJSONResult.ok();

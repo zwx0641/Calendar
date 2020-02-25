@@ -6,6 +6,7 @@ import com.zeno.calendar.utils.IMoocJSONResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.thymeleaf.util.StringUtils;
 
@@ -15,11 +16,12 @@ import java.util.List;
  * @author rf
  */
 @RestController
+@RequestMapping("/reminder")
 public class RemindController {
     @Autowired
     private ReminderService reminderService;
 
-    @PostMapping("/savereminder")
+    @PostMapping("/save")
     public IMoocJSONResult publishReminder(@RequestBody Reminder reminder) throws Exception {
 
         // 1.If belongs to no user, remind user to login
@@ -39,7 +41,7 @@ public class RemindController {
      * @return
      * @throws Exception
      */
-    @PostMapping("/queryreminder")
+    @PostMapping("/query")
     public IMoocJSONResult getReminder(String email) throws Exception {
         List<Reminder> reminders = reminderService.queryReminder(email);
         if (!reminders.isEmpty()) {
@@ -54,7 +56,7 @@ public class RemindController {
      * @return if it is successful
      * @throws Exception
      */
-    @PostMapping("/dropreminder")
+    @PostMapping("/drop")
     public IMoocJSONResult dropReminder(String id) throws Exception {
         if (reminderService.deleteReminder(id)) {
             return IMoocJSONResult.ok();
@@ -68,7 +70,7 @@ public class RemindController {
      * @return
      * @throws Exception
      */
-    @PostMapping("/updatereminder")
+    @PostMapping("/update")
     public IMoocJSONResult updateReminder(String id) throws Exception {
         if (reminderService.updateTime(id)) {
             return IMoocJSONResult.ok();
@@ -82,7 +84,7 @@ public class RemindController {
      * @param remindText
      * @return
      */
-    @PostMapping("/detailreminder")
+    @PostMapping("/detail")
     public IMoocJSONResult detailReminder(String email, String remindText) {
         List<Reminder> reminders = reminderService.getDetailsOfReminder(email,remindText);
         if (!reminders.isEmpty()) {
