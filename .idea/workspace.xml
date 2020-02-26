@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c811b038-d377-47ad-abe4-07c5efeb125e" name="Default Changelist" comment="Change password">
+    <list default="true" id="c811b038-d377-47ad-abe4-07c5efeb125e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zeno/calendar/WebMvcConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zeno/calendar/interceptor/MiniInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zeno/calendar/utils/JsonUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zeno/calendar/controller/EventController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zeno/calendar/controller/EventController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zeno/calendar/controller/RemindController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zeno/calendar/controller/RemindController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +95,7 @@
     <property name="android.sdk.path" value="C:/dev/Java/Android/sdk" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="findjar.last.used.dir" value="$PROJECT_DIR$/../../flutter/clouding_calendar" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../flutter/clouding_calendar" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/zeno/calendar/utils" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -439,7 +442,8 @@
       <workItem from="1582170250382" duration="9435000" />
       <workItem from="1582196507916" duration="625000" />
       <workItem from="1582265120952" duration="3997000" />
-      <workItem from="1582611023461" duration="751000" />
+      <workItem from="1582611023461" duration="1963000" />
+      <workItem from="1582691223559" duration="5260000" />
     </task>
     <task id="LOCAL-00001" summary="Add a table and a controller">
       <created>1579760246376</created>
@@ -539,7 +543,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582191102665</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="URL">
+      <created>1582611906283</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1582611906283</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -574,17 +585,18 @@
     <MESSAGE value="Event details &amp; delete" />
     <MESSAGE value="Event update" />
     <MESSAGE value="Upload avatar &amp; query user" />
-    <option name="LAST_COMMIT_MESSAGE" value="Upload avatar &amp; query user" />
+    <MESSAGE value="URL" />
+    <option name="LAST_COMMIT_MESSAGE" value="URL" />
   </component>
   <component name="WindowStateProjectService">
     <state x="233" y="20" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1579857246898">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="233" y="20" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.720@0.0.1280.720" timestamp="1579857246898" />
-    <state x="446" y="65" key="#com.intellij.ide.util.MemberChooser" timestamp="1582274758531">
+    <state x="446" y="65" key="#com.intellij.ide.util.MemberChooser" timestamp="1582693677353">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="446" y="65" key="#com.intellij.ide.util.MemberChooser/0.0.1280.720@0.0.1280.720" timestamp="1582274758531" />
+    <state x="446" y="65" key="#com.intellij.ide.util.MemberChooser/0.0.1280.720@0.0.1280.720" timestamp="1582693677353" />
     <state x="321" y="99" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1581829822953">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -594,10 +606,10 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="387" y="187" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1280.720@0.0.1280.720" timestamp="1581829274871" />
-    <state x="271" y="0" key="CommitChangelistDialog2" timestamp="1582279839459">
+    <state x="271" y="0" key="CommitChangelistDialog2" timestamp="1582611904931">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="271" y="0" key="CommitChangelistDialog2/0.0.1280.720@0.0.1280.720" timestamp="1582279839459" />
+    <state x="271" y="0" key="CommitChangelistDialog2/0.0.1280.720@0.0.1280.720" timestamp="1582611904931" />
     <state width="416" height="618" key="DebuggerActiveHint" timestamp="1582279523234">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -607,38 +619,38 @@
     </state>
     <state x="-1180" y="296" key="FileChooserDialogImpl/0.0.1280.720/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1579224306753" />
     <state x="493" y="197" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1581234933968" />
-    <state width="1239" height="282" key="GridCell.Tab.0.bottom" timestamp="1582611178858">
+    <state width="1239" height="282" key="GridCell.Tab.0.bottom" timestamp="1582697466791">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1239" height="282" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1582611178858" />
-    <state width="1239" height="282" key="GridCell.Tab.0.center" timestamp="1582611178858">
+    <state width="1239" height="282" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1582697466791" />
+    <state width="1239" height="282" key="GridCell.Tab.0.center" timestamp="1582697466791">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1239" height="282" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1582611178858" />
-    <state width="1239" height="282" key="GridCell.Tab.0.left" timestamp="1582611178858">
+    <state width="1239" height="282" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1582697466791" />
+    <state width="1239" height="282" key="GridCell.Tab.0.left" timestamp="1582697466790">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1239" height="282" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1582611178858" />
-    <state width="1239" height="282" key="GridCell.Tab.0.right" timestamp="1582611178858">
+    <state width="1239" height="282" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1582697466790" />
+    <state width="1239" height="282" key="GridCell.Tab.0.right" timestamp="1582697466791">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1239" height="282" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1582611178858" />
-    <state width="1239" height="282" key="GridCell.Tab.1.bottom" timestamp="1582611178859">
+    <state width="1239" height="282" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1582697466791" />
+    <state width="1239" height="282" key="GridCell.Tab.1.bottom" timestamp="1582697466791">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1239" height="282" key="GridCell.Tab.1.bottom/0.0.1280.720@0.0.1280.720" timestamp="1582611178859" />
-    <state width="1239" height="282" key="GridCell.Tab.1.center" timestamp="1582611178858">
+    <state width="1239" height="282" key="GridCell.Tab.1.bottom/0.0.1280.720@0.0.1280.720" timestamp="1582697466791" />
+    <state width="1239" height="282" key="GridCell.Tab.1.center" timestamp="1582697466791">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1239" height="282" key="GridCell.Tab.1.center/0.0.1280.720@0.0.1280.720" timestamp="1582611178858" />
-    <state width="1239" height="282" key="GridCell.Tab.1.left" timestamp="1582611178858">
+    <state width="1239" height="282" key="GridCell.Tab.1.center/0.0.1280.720@0.0.1280.720" timestamp="1582697466791" />
+    <state width="1239" height="282" key="GridCell.Tab.1.left" timestamp="1582697466791">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1239" height="282" key="GridCell.Tab.1.left/0.0.1280.720@0.0.1280.720" timestamp="1582611178858" />
-    <state width="1239" height="282" key="GridCell.Tab.1.right" timestamp="1582611178859">
+    <state width="1239" height="282" key="GridCell.Tab.1.left/0.0.1280.720@0.0.1280.720" timestamp="1582697466791" />
+    <state width="1239" height="282" key="GridCell.Tab.1.right" timestamp="1582697466791">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1239" height="282" key="GridCell.Tab.1.right/0.0.1280.720@0.0.1280.720" timestamp="1582611178859" />
+    <state width="1239" height="282" key="GridCell.Tab.1.right/0.0.1280.720@0.0.1280.720" timestamp="1582697466791" />
     <state width="186" height="538" key="HiddenNamespacesPopup" timestamp="1579857163102">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -662,9 +674,9 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/zeno/calendar/controller/UserController.java</url>
-          <line>105</line>
-          <option name="timeStamp" value="2" />
+          <url>file://$PROJECT_DIR$/src/main/java/com/zeno/calendar/interceptor/MiniInterceptor.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
