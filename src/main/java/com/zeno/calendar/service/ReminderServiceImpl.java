@@ -106,4 +106,18 @@ public class ReminderServiceImpl implements ReminderService {
         List<Reminder> reminderList = reminderMapper.selectByExample(reminderExample);
         return reminderList;
     }
+
+    @Override
+    public boolean editReminder(Reminder reminder) {
+        Example example = new Example(Reminder.class);
+        Example.Criteria criteria = example.createCriteria();
+        criteria.andEqualTo("id", reminder.getId());
+
+        if (reminderMapper.selectOneByExample(example) != null) {
+            reminderMapper.updateByExampleSelective(reminder, example);
+            return true;
+        }
+
+        return false;
+    }
 }

@@ -29,8 +29,12 @@ public class RemindController {
             return IMoocJSONResult.errorMsg("Please login to set a reminder.");
         }
 
-        // 2.Save reminder
-        reminderService.saveReminder(reminder);
+        if (reminder.getId() == null) {
+            // 2.Save reminder
+            reminderService.saveReminder(reminder);
+        } else {
+            reminderService.editReminder(reminder);
+        }
 
         return IMoocJSONResult.ok();
     }
