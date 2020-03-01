@@ -107,4 +107,18 @@ public class EventServiceImpl implements EventService {
 
         return true;
     }
+
+    @Transactional(propagation = Propagation.SUPPORTS)
+    @Override
+    public boolean editEvent(Event event) {
+        Example example = new Example(Event.class);
+        Example.Criteria criteria = example.createCriteria();
+        criteria.andEqualTo("id", event.getId());
+
+        if (eventMapper.selectOneByExample(example) != null) {
+            eventMapper.updateByExampleSelective(event, example);
+            return true;
+        }
+        return false;
+    }
 }

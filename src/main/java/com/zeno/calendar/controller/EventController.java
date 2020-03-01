@@ -29,8 +29,12 @@ public class EventController {
             return IMoocJSONResult.errorMsg("Please login to set a reminder.");
         }
 
-        // 2.Save reminder
-        eventService.insertEvent(event);
+        if (event.getId() == null) {
+            // 2.Save reminder
+            eventService.insertEvent(event);
+        } else {
+            eventService.editEvent(event);
+        }
 
         return IMoocJSONResult.ok();
     }
@@ -73,4 +77,5 @@ public class EventController {
         }
         return IMoocJSONResult.errorMsg("Unable to update");
     }
+
 }

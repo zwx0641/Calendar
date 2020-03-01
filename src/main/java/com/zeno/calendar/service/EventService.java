@@ -38,4 +38,11 @@ public interface EventService {
      * @return
      */
     boolean updateEventTime(String id);
+
+    /**
+     *
+     * @param event
+     * @return
+     */
+    boolean editEvent(Event event);
 }

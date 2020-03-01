@@ -107,6 +107,7 @@ public class ReminderServiceImpl implements ReminderService {
         return reminderList;
     }
 
+    @Transactional(propagation = Propagation.SUPPORTS)
     @Override
     public boolean editReminder(Reminder reminder) {
         Example example = new Example(Reminder.class);
