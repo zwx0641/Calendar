@@ -5,6 +5,8 @@ import com.zeno.calendar.pojo.VO.UserVO;
 import com.zeno.calendar.service.UserService;
 import com.zeno.calendar.utils.IMoocJSONResult;
 import com.zeno.calendar.utils.MD5Utils;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -15,10 +17,12 @@ import org.thymeleaf.util.StringUtils;
 import java.util.UUID;
 
 @RestController
+@Api(value = "User register & login APIs", tags = {"Controller for register login"})
 public class RegistLoginController extends BasicController {
     @Autowired
     private UserService userService;
 
+    @ApiOperation(value = "User registration", notes = "User registration api")
     @PostMapping("/register")
     public IMoocJSONResult register(@RequestBody User user) throws Exception {
 
@@ -57,6 +61,7 @@ public class RegistLoginController extends BasicController {
         return userVO;
     }
 
+    @ApiOperation(value = "User login", notes = "User login api")
     @PostMapping("/login")
     public IMoocJSONResult login(@RequestBody User user) throws Exception {
         String email = user.getEmail();

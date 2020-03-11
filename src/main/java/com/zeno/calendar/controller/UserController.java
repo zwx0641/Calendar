@@ -5,6 +5,7 @@ import com.zeno.calendar.pojo.VO.UserVO;
 import com.zeno.calendar.service.UserService;
 import com.zeno.calendar.utils.IMoocJSONResult;
 import com.zeno.calendar.utils.MD5Utils;
+import io.swagger.annotations.Api;
 import org.apache.tomcat.util.http.fileupload.IOUtils;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,6 +21,7 @@ import java.io.InputStream;
 /**
  * 用户相关业务的接口
  */
+@Api(value = "User APIs", tags = {"Controller for user APIs"})
 @RequestMapping("/user")
 public class UserController extends BasicController {
     @Autowired

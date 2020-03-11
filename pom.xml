@@ -45,6 +45,17 @@
 		</dependency>
 
 		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger2</artifactId>
+			<version>2.4.0</version>
+		</dependency>
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger-ui</artifactId>
+			<version>2.4.0</version>
+		</dependency>
+
+		<dependency>
 			<groupId>com.alibaba</groupId>
 			<artifactId>fastjson</artifactId>
 			<version>1.2.62</version>
@@ -106,6 +117,7 @@
 			<artifactId>spring-data-redis</artifactId>
 			<version>1.8.7.RELEASE</version>
 		</dependency>
+
 
 		<!--devtools热部署-->
 		<dependency>

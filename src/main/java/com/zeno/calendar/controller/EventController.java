@@ -3,6 +3,7 @@ package com.zeno.calendar.controller;
 import com.zeno.calendar.pojo.Event;
 import com.zeno.calendar.service.EventService;
 import com.zeno.calendar.utils.IMoocJSONResult;
+import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -17,6 +18,7 @@ import java.util.List;
  * @author rf
  */
 @RestController
+@Api(value = "Event APIs", tags = {"Controller for Event APIs"})
 @RequestMapping("/event")
 public class EventController {
     @Autowired

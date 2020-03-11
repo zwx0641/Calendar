@@ -1,14 +1,22 @@
 package com.zeno.calendar.pojo;
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+
+@ApiModel(value = "User", description = "This is user")
 public class User {
+    @ApiModelProperty(hidden = true)
     private String id;
 
     private String email;
 
+    @ApiModelProperty(value = "Password", name = "password", example = "123456", required = true)
     private String password;
 
+    @ApiModelProperty(value = "Username", name = "username", example = "zwx0641", required = true)
     private String username;
 
+    @ApiModelProperty(hidden = true)
     private String face_image;
 
     /**

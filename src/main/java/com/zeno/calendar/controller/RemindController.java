@@ -3,6 +3,7 @@ package com.zeno.calendar.controller;
 import com.zeno.calendar.pojo.Reminder;
 import com.zeno.calendar.service.ReminderService;
 import com.zeno.calendar.utils.IMoocJSONResult;
+import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -16,6 +17,7 @@ import java.util.List;
  * @author rf
  */
 @RestController
+@Api(value = "Reminder APIs", tags = {"Controller for Reminder APIs"})
 @RequestMapping("/reminder")
 public class RemindController {
     @Autowired
