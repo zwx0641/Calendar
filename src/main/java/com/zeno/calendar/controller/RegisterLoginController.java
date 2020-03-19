@@ -16,9 +16,12 @@ import org.thymeleaf.util.StringUtils;
 
 import java.util.UUID;
 
+/**
+ * @author rf
+ */
 @RestController
 @Api(value = "User register & login APIs", tags = {"Controller for register login"})
-public class RegistLoginController extends BasicController {
+public class RegisterLoginController extends BasicController {
     @Autowired
     private UserService userService;
 
@@ -31,15 +34,17 @@ public class RegistLoginController extends BasicController {
             return IMoocJSONResult.errorMsg("Username or password cannot be empty");
         }
         //2. Username existing?
-        boolean isExist = userService.queryEmailIsExist(user.getEmail());
-
+        boolean isEmailExist = userService.queryEmailIsExist(user.getEmail());
+        boolean isUsernameExist = userService.queryUsernameIsExist(user.getUsername());
         //3. Save user
-        if (!isExist) {
+        if (!isEmailExist && !isUsernameExist) {
             user.setPassword(MD5Utils.getMD5Str(user.getPassword()));
 
             userService.saveUser(user);
-        } else {
-            return IMoocJSONResult.errorMsg("Username already exist. Try another one");
+        } else if (isUsernameExist) {
+            return IMoocJSONResult.errorMsg("Username already exists. Try another one");
+        } else if (isEmailExist) {
+            return IMoocJSONResult.errorMsg("Email already exists. Try another one");
         }
 
         user.setPassword("");

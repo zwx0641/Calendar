@@ -1,30 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c811b038-d377-47ad-abe4-07c5efeb125e" name="Default Changelist" comment="Edit event">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_18_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_core_2_4_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_schema_2_4_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spi_2_4_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spring_web_2_4_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger2_2_4_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger_common_2_4_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger_ui_2_4_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_annotations_1_5_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_models_1_5_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_core_1_2_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_metadata_1_2_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zeno/calendar/Swagger2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="c811b038-d377-47ad-abe4-07c5efeb125e" name="Default Changelist" comment="Swagger2 integration">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/calendar.iml" beforeDir="false" afterPath="$PROJECT_DIR$/calendar.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zeno/calendar/WebMvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zeno/calendar/WebMvcConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zeno/calendar/controller/EventController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zeno/calendar/controller/EventController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zeno/calendar/controller/RegistLoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zeno/calendar/controller/RegistLoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zeno/calendar/controller/RemindController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zeno/calendar/controller/RemindController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zeno/calendar/controller/RegistLoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zeno/calendar/controller/RegisterLoginController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/zeno/calendar/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zeno/calendar/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zeno/calendar/pojo/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zeno/calendar/pojo/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zeno/calendar/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zeno/calendar/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zeno/calendar/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zeno/calendar/service/UserServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +103,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
@@ -472,7 +454,14 @@
       <workItem from="1583043342038" duration="2884000" />
       <workItem from="1583313989689" duration="269000" />
       <workItem from="1583314294333" duration="94000" />
-      <workItem from="1583897810120" duration="2092000" />
+      <workItem from="1583897810120" duration="6284000" />
+      <workItem from="1583904599607" duration="2963000" />
+      <workItem from="1584086518349" duration="1000000" />
+      <workItem from="1584418651330" duration="627000" />
+      <workItem from="1584433939634" duration="142000" />
+      <workItem from="1584531168667" duration="638000" />
+      <workItem from="1584589756780" duration="2284000" />
+      <workItem from="1584602306129" duration="1191000" />
     </task>
     <task id="LOCAL-00001" summary="Add a table and a controller">
       <created>1579760246376</created>
@@ -600,7 +589,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583049010709</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Swagger2 integration">
+      <created>1583900034754</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1583900034754</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -639,17 +635,18 @@
     <MESSAGE value="Interceptor" />
     <MESSAGE value="Edit reminder" />
     <MESSAGE value="Edit event" />
-    <option name="LAST_COMMIT_MESSAGE" value="Edit event" />
+    <MESSAGE value="Swagger2 integration" />
+    <option name="LAST_COMMIT_MESSAGE" value="Swagger2 integration" />
   </component>
   <component name="WindowStateProjectService">
     <state x="233" y="20" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1579857246898">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="233" y="20" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.720@0.0.1280.720" timestamp="1579857246898" />
-    <state x="446" y="65" key="#com.intellij.ide.util.MemberChooser" timestamp="1583043506635">
+    <state x="446" y="65" key="#com.intellij.ide.util.MemberChooser" timestamp="1584589893373">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="446" y="65" key="#com.intellij.ide.util.MemberChooser/0.0.1280.720@0.0.1280.720" timestamp="1583043506635" />
+    <state x="446" y="65" key="#com.intellij.ide.util.MemberChooser/0.0.1280.720@0.0.1280.720" timestamp="1584589893373" />
     <state x="321" y="99" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1583897849589">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -659,51 +656,51 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="387" y="187" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1280.720@0.0.1280.720" timestamp="1581829274871" />
-    <state x="271" y="0" key="CommitChangelistDialog2" timestamp="1583899670255">
+    <state x="271" y="0" key="CommitChangelistDialog2" timestamp="1584087149992">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="271" y="0" key="CommitChangelistDialog2/0.0.1280.720@0.0.1280.720" timestamp="1583899670255" />
-    <state width="416" height="618" key="DebuggerActiveHint" timestamp="1582880121678">
+    <state x="271" y="0" key="CommitChangelistDialog2/0.0.1280.720@0.0.1280.720" timestamp="1584087149992" />
+    <state width="437" height="618" key="DebuggerActiveHint" timestamp="1583906978082">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="416" height="618" key="DebuggerActiveHint/0.0.1280.720@0.0.1280.720" timestamp="1582880121678" />
+    <state width="437" height="618" key="DebuggerActiveHint/0.0.1280.720@0.0.1280.720" timestamp="1583906978082" />
     <state x="493" y="197" key="FileChooserDialogImpl" timestamp="1583314257063">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="-1180" y="296" key="FileChooserDialogImpl/0.0.1280.720/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1579224306753" />
     <state x="493" y="197" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1583314257063" />
-    <state width="1237" height="169" key="GridCell.Tab.0.bottom" timestamp="1583899931117">
+    <state width="1237" height="169" key="GridCell.Tab.0.bottom" timestamp="1584434086091">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="169" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1583899931117" />
-    <state width="1237" height="169" key="GridCell.Tab.0.center" timestamp="1583899931116">
+    <state width="1237" height="169" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1584434086091" />
+    <state width="1237" height="169" key="GridCell.Tab.0.center" timestamp="1584434086091">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="169" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1583899931116" />
-    <state width="1237" height="169" key="GridCell.Tab.0.left" timestamp="1583899931116">
+    <state width="1237" height="169" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1584434086091" />
+    <state width="1237" height="169" key="GridCell.Tab.0.left" timestamp="1584434086091">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="169" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1583899931116" />
-    <state width="1237" height="169" key="GridCell.Tab.0.right" timestamp="1583899931116">
+    <state width="1237" height="169" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1584434086091" />
+    <state width="1237" height="169" key="GridCell.Tab.0.right" timestamp="1584434086091">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="169" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1583899931116" />
-    <state width="1237" height="169" key="GridCell.Tab.1.bottom" timestamp="1583899931117">
+    <state width="1237" height="169" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1584434086091" />
+    <state width="1237" height="169" key="GridCell.Tab.1.bottom" timestamp="1584434086092">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="169" key="GridCell.Tab.1.bottom/0.0.1280.720@0.0.1280.720" timestamp="1583899931117" />
-    <state width="1237" height="169" key="GridCell.Tab.1.center" timestamp="1583899931117">
+    <state width="1237" height="169" key="GridCell.Tab.1.bottom/0.0.1280.720@0.0.1280.720" timestamp="1584434086092" />
+    <state width="1237" height="169" key="GridCell.Tab.1.center" timestamp="1584434086091">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="169" key="GridCell.Tab.1.center/0.0.1280.720@0.0.1280.720" timestamp="1583899931117" />
-    <state width="1237" height="169" key="GridCell.Tab.1.left" timestamp="1583899931117">
+    <state width="1237" height="169" key="GridCell.Tab.1.center/0.0.1280.720@0.0.1280.720" timestamp="1584434086091" />
+    <state width="1237" height="169" key="GridCell.Tab.1.left" timestamp="1584434086091">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="169" key="GridCell.Tab.1.left/0.0.1280.720@0.0.1280.720" timestamp="1583899931117" />
-    <state width="1237" height="169" key="GridCell.Tab.1.right" timestamp="1583899931117">
+    <state width="1237" height="169" key="GridCell.Tab.1.left/0.0.1280.720@0.0.1280.720" timestamp="1584434086091" />
+    <state width="1237" height="169" key="GridCell.Tab.1.right" timestamp="1584434086092">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="169" key="GridCell.Tab.1.right/0.0.1280.720@0.0.1280.720" timestamp="1583899931117" />
+    <state width="1237" height="169" key="GridCell.Tab.1.right/0.0.1280.720@0.0.1280.720" timestamp="1584434086092" />
     <state width="186" height="538" key="HiddenNamespacesPopup" timestamp="1579857163102">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -712,12 +709,16 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="421" y="167" key="RestClientTextRequest/0.0.1280.720@0.0.1280.720" timestamp="1579852867757" />
-    <state x="150" y="5" key="SettingsEditor" timestamp="1583314263096">
+    <state x="80" y="7" key="SettingsEditor" timestamp="1584086628319">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="-1695" y="8" key="SettingsEditor/0.0.1280.720/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1579224522895" />
     <state x="150" y="5" key="SettingsEditor/0.0.1280.720/-1920.0.1920.1080@0.0.1280.720" timestamp="1578112240779" />
-    <state x="150" y="5" key="SettingsEditor/0.0.1280.720@0.0.1280.720" timestamp="1583314263096" />
+    <state x="80" y="7" key="SettingsEditor/0.0.1280.720@0.0.1280.720" timestamp="1584086628319" />
+    <state x="52" y="59" key="new project wizard" timestamp="1584531207847">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="52" y="59" key="new project wizard/0.0.1280.720@0.0.1280.720" timestamp="1584531207847" />
     <state x="297" y="161" width="672" height="677" key="run.anything.popup" timestamp="1582190774837">
       <screen x="0" y="0" width="1280" height="720" />
     </state>

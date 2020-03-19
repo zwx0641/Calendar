@@ -27,6 +27,15 @@ public class UserServiceImpl implements UserService {
         return result == null ? false : true;
     }
 
+    @Override
+    public boolean queryUsernameIsExist(String username) {
+        User user = new User();
+        user.setUsername(username);
+        User result = userMapper.selectOne(user);
+
+        return result == null ? false : true;
+    }
+
     @Transactional(propagation = Propagation.REQUIRED)
     @Override
     public void saveUser(User user) {

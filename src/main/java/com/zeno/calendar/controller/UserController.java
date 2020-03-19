@@ -17,6 +17,9 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.InputStream;
 
+/**
+ * @author rf
+ */
 @RestController
 /**
  * 用户相关业务的接口
@@ -46,6 +49,7 @@ public class UserController extends BasicController {
 
 
                 String filename = files[0].getOriginalFilename();
+                System.out.println(filename);
 
                 if (!StringUtils.isEmpty(filename)) {
                     //绝对路径
@@ -74,7 +78,7 @@ public class UserController extends BasicController {
                 fileOutputStream.close();
             }
         }
-
+        System.out.println(uploadPathDB);
         User user = new User();
         user.setId(userId);
         user.setFace_image(uploadPathDB);
