@@ -1,2 +1,3 @@
-# Calendar
- 云日历后端
+# Zalendar back-end
+
+Server for Zalendar
