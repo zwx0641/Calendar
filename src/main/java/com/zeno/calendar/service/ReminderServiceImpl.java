@@ -73,11 +73,13 @@ public class ReminderServiceImpl implements ReminderService {
             calendar.setTime(reminder.getRemindTime());
             switch (reminder.getRepetition()) {
                 case 1:
-                    updater.setRemindTime(new Date(reminder.getRemindTime().getTime() + 24*60*60*1000));
+                    calendar.add(Calendar.DATE, 1);
+                    updater.setRemindTime(calendar.getTime());
                     reminderMapper.updateByExampleSelective(updater, reminderExample);
                     break;
                 case 2:
-                    updater.setRemindTime(new Date(reminder.getRemindTime().getTime() + 24*60*60*1000*7));
+                    calendar.add(Calendar.DATE, 7);
+                    updater.setRemindTime(calendar.getTime());
                     reminderMapper.updateByExampleSelective(updater, reminderExample);
                     break;
                 case 3:

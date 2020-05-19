@@ -3,13 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="c811b038-d377-47ad-abe4-07c5efeb125e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application-prod.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-prod.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zeno/calendar/service/ReminderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zeno/calendar/service/ReminderServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/calendar-0.0.1-SNAPSHOT.war.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/calendar-0.0.1-SNAPSHOT.war.original" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/calendar-0.0.1-SNAPSHOT/WEB-INF/classes/application-prod.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/calendar-0.0.1-SNAPSHOT/WEB-INF/classes/application-prod.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/calendar-0.0.1-SNAPSHOT/WEB-INF/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/calendar-0.0.1-SNAPSHOT/WEB-INF/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application-prod.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application-prod.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -457,6 +452,8 @@
       <workItem from="1588734275306" duration="685000" />
       <workItem from="1588751921885" duration="874000" />
       <workItem from="1589208575819" duration="2224000" />
+      <workItem from="1589885193637" duration="69000" />
+      <workItem from="1589885447214" duration="493000" />
     </task>
     <task id="LOCAL-00001" summary="Add a table and a controller">
       <created>1579760246376</created>
@@ -665,22 +662,22 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="493" y="197" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1583314257063" />
-    <state width="1237" height="430" key="GridCell.Tab.0.bottom" timestamp="1589211897289">
+    <state width="1237" height="430" key="GridCell.Tab.0.bottom" timestamp="1589885939881">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="430" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1589211897289" />
-    <state width="1237" height="430" key="GridCell.Tab.0.center" timestamp="1589211897289">
+    <state width="1237" height="430" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1589885939881" />
+    <state width="1237" height="430" key="GridCell.Tab.0.center" timestamp="1589885939881">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="430" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1589211897289" />
-    <state width="1237" height="430" key="GridCell.Tab.0.left" timestamp="1589211897289">
+    <state width="1237" height="430" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1589885939881" />
+    <state width="1237" height="430" key="GridCell.Tab.0.left" timestamp="1589885939881">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="430" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1589211897289" />
-    <state width="1237" height="430" key="GridCell.Tab.0.right" timestamp="1589211897289">
+    <state width="1237" height="430" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1589885939881" />
+    <state width="1237" height="430" key="GridCell.Tab.0.right" timestamp="1589885939881">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="430" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1589211897289" />
+    <state width="1237" height="430" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1589885939881" />
     <state width="1237" height="416" key="GridCell.Tab.1.bottom" timestamp="1587701815496">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
