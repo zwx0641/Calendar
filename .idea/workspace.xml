@@ -1,11 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="c811b038-d377-47ad-abe4-07c5efeb125e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zeno/calendar/service/ReminderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zeno/calendar/service/ReminderServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/calendar-0.0.1-SNAPSHOT.war.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/calendar-0.0.1-SNAPSHOT.war.original" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zeno/calendar/controller/EventController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zeno/calendar/controller/EventController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zeno/calendar/controller/RegisterLoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zeno/calendar/controller/RegisterLoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zeno/calendar/controller/RemindController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zeno/calendar/controller/RemindController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zeno/calendar/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zeno/calendar/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zeno/calendar/interceptor/MiniInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zeno/calendar/interceptor/MiniInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zeno/calendar/utils/IMoocJSONResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zeno/calendar/utils/JSONResult.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +65,13 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="C:\dev\JetBrains\IntelliJ IDEA 2020.2.4\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="MavenRunner">
     <option name="skipTests" value="true" />
     <option name="vmOptions" value="-DarchetypeCatalog=internal" />
@@ -87,16 +103,16 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="findjar.last.used.dir" value="$PROJECT_DIR$/../../flutter/clouding_calendar" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../PaymentSys" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.updates" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
@@ -341,6 +357,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CalendarApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="calendar" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.zeno.calendar.CalendarApplication" />
@@ -350,11 +379,12 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Generate" />
         <item itemvalue="Application.GeneratorSqlmap" />
+        <item itemvalue="Application.Generate" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SshConsoleOptionsProvider">
     <option name="myEncoding" value="UTF-8" />
   </component>
@@ -454,6 +484,16 @@
       <workItem from="1589208575819" duration="2224000" />
       <workItem from="1589885193637" duration="69000" />
       <workItem from="1589885447214" duration="493000" />
+      <workItem from="1590369014506" duration="1001000" />
+      <workItem from="1590370045613" duration="212000" />
+      <workItem from="1590371058874" duration="674000" />
+      <workItem from="1590375164087" duration="14433000" />
+      <workItem from="1590404608878" duration="1269000" />
+      <workItem from="1590452752243" duration="1005000" />
+      <workItem from="1606783922041" duration="5512000" />
+      <workItem from="1606806633025" duration="473000" />
+      <workItem from="1606807283971" duration="4669000" />
+      <workItem from="1606977297159" duration="1858000" />
     </task>
     <task id="LOCAL-00001" summary="Add a table and a controller">
       <created>1579760246376</created>
@@ -599,7 +639,7 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -638,73 +678,13 @@
     <option name="LAST_COMMIT_MESSAGE" value="Minor changes" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="446" y="65" key="#com.intellij.ide.util.MemberChooser" timestamp="1587692488566">
-      <screen x="0" y="0" width="1280" height="720" />
+    <state x="507" y="178" key="#Notifications" timestamp="1606805106529">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="446" y="65" key="#com.intellij.ide.util.MemberChooser/0.0.1280.720@0.0.1280.720" timestamp="1587692488566" />
-    <state x="321" y="99" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1588733606586">
-      <screen x="0" y="0" width="1280" height="720" />
+    <state x="507" y="178" key="#Notifications/0.0.1280.680@0.0.1280.680" timestamp="1606805106529" />
+    <state x="121" y="0" key="SettingsEditor" timestamp="1606807466698">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="321" y="99" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1280.720@0.0.1280.720" timestamp="1588733606586" />
-    <state x="387" y="187" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1581829274871">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state x="387" y="187" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1280.720@0.0.1280.720" timestamp="1581829274871" />
-    <state x="271" y="0" key="CommitChangelistDialog2" timestamp="1584604381364">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state x="271" y="0" key="CommitChangelistDialog2/0.0.1280.720@0.0.1280.720" timestamp="1584604381364" />
-    <state width="437" height="618" key="DebuggerActiveHint" timestamp="1583906978082">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state width="437" height="618" key="DebuggerActiveHint/0.0.1280.720@0.0.1280.720" timestamp="1583906978082" />
-    <state x="493" y="197" key="FileChooserDialogImpl" timestamp="1583314257063">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state x="493" y="197" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1583314257063" />
-    <state width="1237" height="430" key="GridCell.Tab.0.bottom" timestamp="1589885939881">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state width="1237" height="430" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1589885939881" />
-    <state width="1237" height="430" key="GridCell.Tab.0.center" timestamp="1589885939881">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state width="1237" height="430" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1589885939881" />
-    <state width="1237" height="430" key="GridCell.Tab.0.left" timestamp="1589885939881">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state width="1237" height="430" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1589885939881" />
-    <state width="1237" height="430" key="GridCell.Tab.0.right" timestamp="1589885939881">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state width="1237" height="430" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1589885939881" />
-    <state width="1237" height="416" key="GridCell.Tab.1.bottom" timestamp="1587701815496">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state width="1237" height="416" key="GridCell.Tab.1.bottom/0.0.1280.720@0.0.1280.720" timestamp="1587701815495" />
-    <state width="1237" height="416" key="GridCell.Tab.1.center" timestamp="1587701815495">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state width="1237" height="416" key="GridCell.Tab.1.center/0.0.1280.720@0.0.1280.720" timestamp="1587701815495" />
-    <state width="1237" height="416" key="GridCell.Tab.1.left" timestamp="1587701815495">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state width="1237" height="416" key="GridCell.Tab.1.left/0.0.1280.720@0.0.1280.720" timestamp="1587701815495" />
-    <state width="1237" height="416" key="GridCell.Tab.1.right" timestamp="1587701815495">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state width="1237" height="416" key="GridCell.Tab.1.right/0.0.1280.720@0.0.1280.720" timestamp="1587701815495" />
-    <state x="80" y="0" key="SettingsEditor" timestamp="1587700311825">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state x="80" y="0" key="SettingsEditor/0.0.1280.720@0.0.1280.720" timestamp="1587700311825" />
-    <state x="52" y="0" key="new project wizard" timestamp="1584791253506">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state x="52" y="0" key="new project wizard/0.0.1280.720@0.0.1280.720" timestamp="1584791253506" />
-    <state x="297" y="161" width="672" height="677" key="run.anything.popup" timestamp="1582190774837">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state x="297" y="161" width="672" height="677" key="run.anything.popup/0.0.1280.720@0.0.1280.720" timestamp="1582190774837" />
+    <state x="121" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1606807466698" />
   </component>
 </project>

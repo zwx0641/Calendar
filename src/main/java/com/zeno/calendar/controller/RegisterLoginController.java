@@ -3,7 +3,7 @@ package com.zeno.calendar.controller;
 import com.zeno.calendar.pojo.User;
 import com.zeno.calendar.pojo.VO.UserVO;
 import com.zeno.calendar.service.UserService;
-import com.zeno.calendar.utils.IMoocJSONResult;
+import com.zeno.calendar.utils.JSONResult;
 import com.zeno.calendar.utils.MD5Utils;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -27,11 +27,11 @@ public class RegisterLoginController extends BasicController {
 
     @ApiOperation(value = "User registration", notes = "User registration api")
     @PostMapping("/register")
-    public IMoocJSONResult register(@RequestBody User user) throws Exception {
+    public JSONResult register(@RequestBody User user) throws Exception {
 
         //1. Username, password not empty
         if (StringUtils.isEmpty(user.getUsername()) || StringUtils.isEmpty(user.getPassword())) {
-            return IMoocJSONResult.errorMsg("Username or password cannot be empty");
+            return JSONResult.errorMsg("Username or password cannot be empty");
         }
         //2. Username existing?
         boolean isEmailExist = userService.queryEmailIsExist(user.getEmail());
@@ -42,16 +42,16 @@ public class RegisterLoginController extends BasicController {
 
             userService.saveUser(user);
         } else if (isUsernameExist) {
-            return IMoocJSONResult.errorMsg("Username already exists. Try another one");
+            return JSONResult.errorMsg("Username already exists. Try another one");
         } else if (isEmailExist) {
-            return IMoocJSONResult.errorMsg("Email already exists. Try another one");
+            return JSONResult.errorMsg("Email already exists. Try another one");
         }
 
         user.setPassword("");
 
         UserVO userVO = setUserRedis(user);
 
-        return IMoocJSONResult.ok(userVO);
+        return JSONResult.ok(userVO);
     }
 
     public UserVO setUserRedis(User userModel) {
@@ -68,13 +68,13 @@ public class RegisterLoginController extends BasicController {
 
     @ApiOperation(value = "User login", notes = "User login api")
     @PostMapping("/login")
-    public IMoocJSONResult login(@RequestBody User user) throws Exception {
+    public JSONResult login(@RequestBody User user) throws Exception {
         String email = user.getEmail();
         String password = user.getPassword();
 
         // 1. Not empty
         if (StringUtils.isEmpty(email) || StringUtils.isEmpty(password)) {
-            return IMoocJSONResult.errorMsg("Username or password cannot be empty");
+            return JSONResult.errorMsg("Username or password cannot be empty");
         }
 
         // 2. User exists?
@@ -84,16 +84,16 @@ public class RegisterLoginController extends BasicController {
         if (user1 != null) {
             user1.setPassword("");
             UserVO userVO = setUserRedis(user1);
-            return IMoocJSONResult.ok(userVO);
+            return JSONResult.ok(userVO);
         } else {
-            return IMoocJSONResult.errorMsg("Incorrect password or username.");
+            return JSONResult.errorMsg("Incorrect password or username.");
         }
     }
 
     @PostMapping("/logout")
-    public IMoocJSONResult logout(String userId) throws Exception {
+    public JSONResult logout(String userId) throws Exception {
         //删除redis session
         redis.del(USER_REDIS_SESSION + ":" + userId);
-        return IMoocJSONResult.ok();
+        return JSONResult.ok();
     }
 }

@@ -2,7 +2,7 @@ package com.zeno.calendar.controller;
 
 import com.zeno.calendar.pojo.Reminder;
 import com.zeno.calendar.service.ReminderService;
-import com.zeno.calendar.utils.IMoocJSONResult;
+import com.zeno.calendar.utils.JSONResult;
 import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -24,11 +24,11 @@ public class RemindController {
     private ReminderService reminderService;
 
     @PostMapping("/save")
-    public IMoocJSONResult publishReminder(@RequestBody Reminder reminder) throws Exception {
+    public JSONResult publishReminder(@RequestBody Reminder reminder) throws Exception {
 
         // 1.If belongs to no user, remind user to login
         if (StringUtils.isEmpty(reminder.getEmail())) {
-            return IMoocJSONResult.errorMsg("Please login to set a reminder.");
+            return JSONResult.errorMsg("Please login to set a reminder.");
         }
 
         if (reminder.getId() == null) {
@@ -38,7 +38,7 @@ public class RemindController {
             reminderService.editReminder(reminder);
         }
 
-        return IMoocJSONResult.ok();
+        return JSONResult.ok();
     }
 
     /**
@@ -48,12 +48,12 @@ public class RemindController {
      * @throws Exception
      */
     @PostMapping("/query")
-    public IMoocJSONResult getReminder(String email) throws Exception {
+    public JSONResult getReminder(String email) throws Exception {
         List<Reminder> reminders = reminderService.queryReminder(email);
         if (!reminders.isEmpty()) {
-            return IMoocJSONResult.ok(reminders);
+            return JSONResult.ok(reminders);
         }
-        return IMoocJSONResult.errorMsg("Unable to find a reminder");
+        return JSONResult.errorMsg("Unable to find a reminder");
     }
 
     /**
@@ -63,11 +63,11 @@ public class RemindController {
      * @throws Exception
      */
     @PostMapping("/drop")
-    public IMoocJSONResult dropReminder(String id) throws Exception {
+    public JSONResult dropReminder(String id) throws Exception {
         if (reminderService.deleteReminder(id)) {
-            return IMoocJSONResult.ok();
+            return JSONResult.ok();
         }
-        return IMoocJSONResult.errorMsg("error");
+        return JSONResult.errorMsg("error");
     }
 
     /**
@@ -77,11 +77,11 @@ public class RemindController {
      * @throws Exception
      */
     @PostMapping("/update")
-    public IMoocJSONResult updateReminder(String id) throws Exception {
+    public JSONResult updateReminder(String id) throws Exception {
         if (reminderService.updateTime(id)) {
-            return IMoocJSONResult.ok();
+            return JSONResult.ok();
         }
-        return IMoocJSONResult.errorMsg("error");
+        return JSONResult.errorMsg("error");
     }
 
     /**
@@ -91,11 +91,11 @@ public class RemindController {
      * @return
      */
     @PostMapping("/detail")
-    public IMoocJSONResult detailReminder(String email, String remindText) {
+    public JSONResult detailReminder(String email, String remindText) {
         List<Reminder> reminders = reminderService.getDetailsOfReminder(email,remindText);
         if (!reminders.isEmpty()) {
-            return IMoocJSONResult.ok(reminders);
+            return JSONResult.ok(reminders);
         }
-        return IMoocJSONResult.errorMsg("Unable to find a reminder");
+        return JSONResult.errorMsg("Unable to find a reminder");
     }
 }

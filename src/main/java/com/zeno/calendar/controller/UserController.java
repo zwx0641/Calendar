@@ -3,7 +3,7 @@ package com.zeno.calendar.controller;
 import com.zeno.calendar.pojo.User;
 import com.zeno.calendar.pojo.VO.UserVO;
 import com.zeno.calendar.service.UserService;
-import com.zeno.calendar.utils.IMoocJSONResult;
+import com.zeno.calendar.utils.JSONResult;
 import com.zeno.calendar.utils.MD5Utils;
 import io.swagger.annotations.Api;
 import org.apache.tomcat.util.http.fileupload.IOUtils;
@@ -32,14 +32,14 @@ public class UserController extends BasicController {
 
     //用户上传头像
     @PostMapping("/uploadFace")
-    public IMoocJSONResult logout(String userId, @RequestParam("file") MultipartFile[] files) throws Exception {
+    public JSONResult logout(String userId, @RequestParam("file") MultipartFile[] files) throws Exception {
         //定义存储空间
         String fileSpace = "C:/workspace/Spring/calendar_storage";
         //保存到数据库的相对路径
         String uploadPathDB = "/" + userId + "/face";
 
         if(StringUtils.isEmpty(userId)) {
-            return IMoocJSONResult.errorMsg("用户id为空");
+            return JSONResult.errorMsg("用户id为空");
         }
 
         FileOutputStream fileOutputStream = null;
@@ -67,11 +67,11 @@ public class UserController extends BasicController {
                     IOUtils.copy(inputStream, fileOutputStream);
                 }
             } else {
-                return IMoocJSONResult.errorMsg("Upload error");
+                return JSONResult.errorMsg("Upload error");
             }
         } catch (Exception e) {
             e.printStackTrace();
-            return IMoocJSONResult.errorMsg("Upload error");
+            return JSONResult.errorMsg("Upload error");
         } finally {
             if(fileOutputStream != null) {
                 fileOutputStream.flush();
@@ -84,26 +84,26 @@ public class UserController extends BasicController {
         user.setFace_image(uploadPathDB);
         userService.updateUserInfo(user);
 
-        return IMoocJSONResult.ok(uploadPathDB);
+        return JSONResult.ok(uploadPathDB);
     }
 
     @PostMapping("/query")
-    public IMoocJSONResult query(String userId) {
+    public JSONResult query(String userId) {
         if (StringUtils.isEmpty(userId)) {
-            return IMoocJSONResult.errorMsg("User cannot be empty");
+            return JSONResult.errorMsg("User cannot be empty");
         }
 
         User user = userService.queryUserInfo(userId);
         UserVO userVO = new UserVO();
         BeanUtils.copyProperties(user, userVO);
 
-        return IMoocJSONResult.ok(userVO);
+        return JSONResult.ok(userVO);
     }
 
     @PostMapping("/passchange")
-    public IMoocJSONResult passChange(String userId, String formerPass, String newPass) throws Exception {
+    public JSONResult passChange(String userId, String formerPass, String newPass) throws Exception {
         if (StringUtils.isEmpty(userId)) {
-            return IMoocJSONResult.errorMsg("User cannot be empty");
+            return JSONResult.errorMsg("User cannot be empty");
         }
 
         User former = userService.queryUserInfo(userId);
@@ -112,9 +112,9 @@ public class UserController extends BasicController {
         if (former.getPassword().equals(MD5Utils.getMD5Str(formerPass))) {
             latter.setPassword(MD5Utils.getMD5Str(newPass));
             userService.updateUserInfo(latter);
-            return IMoocJSONResult.ok();
+            return JSONResult.ok();
         } else {
-            return IMoocJSONResult.errorMsg("Wrong password");
+            return JSONResult.errorMsg("Wrong password");
         }
     }
 }

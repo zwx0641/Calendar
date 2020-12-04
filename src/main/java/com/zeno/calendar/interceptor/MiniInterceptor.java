@@ -1,6 +1,6 @@
 package com.zeno.calendar.interceptor;
 
-import com.zeno.calendar.utils.IMoocJSONResult;
+import com.zeno.calendar.utils.JSONResult;
 import com.zeno.calendar.utils.JsonUtils;
 import com.zeno.calendar.utils.RedisOperator;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -43,17 +43,17 @@ public class MiniInterceptor implements HandlerInterceptor {
 
             if (StringUtils.isEmpty(uniqueToken)) {
                 // Token expires, relogin
-                returnErrorResponse(response, new IMoocJSONResult().errorTokenMsg("Please login"));
+                returnErrorResponse(response, new JSONResult().errorTokenMsg("Please login"));
                 return false;
             } else {
                 if (!uniqueToken.equals(userToken)) {
                     // Login in another phone
-                    returnErrorResponse(response, new IMoocJSONResult().errorTokenMsg("Already logged in on another device"));
+                    returnErrorResponse(response, new JSONResult().errorTokenMsg("Already logged in on another device"));
                     return false;
                 }
             }
         } else {
-            returnErrorResponse(response, new IMoocJSONResult().errorTokenMsg("Please login"));
+            returnErrorResponse(response, new JSONResult().errorTokenMsg("Please login"));
             return false;
         }
 
@@ -64,7 +64,7 @@ public class MiniInterceptor implements HandlerInterceptor {
         return true;
     }
 
-    public void returnErrorResponse(HttpServletResponse response, IMoocJSONResult result)
+    public void returnErrorResponse(HttpServletResponse response, JSONResult result)
             throws IOException, UnsupportedEncodingException {
         OutputStream out=null;
         try{

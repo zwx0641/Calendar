@@ -2,7 +2,7 @@ package com.zeno.calendar.controller;
 
 import com.zeno.calendar.pojo.Event;
 import com.zeno.calendar.service.EventService;
-import com.zeno.calendar.utils.IMoocJSONResult;
+import com.zeno.calendar.utils.JSONResult;
 import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -18,17 +18,17 @@ import java.util.List;
  * @author rf
  */
 @RestController
-@Api(value = "Event APIs", tags = {"Controller for Event APIs"})
+@Api(value = "Event APIs", tags = {"Controller for  Event APIs"})
 @RequestMapping("/event")
 public class EventController {
     @Autowired
     private EventService eventService;
 
     @PostMapping("/save")
-    public IMoocJSONResult saveEvent(@RequestBody Event event) {
+    public JSONResult saveEvent(@RequestBody Event event) {
         // 1.If belongs to no user, remind user to login
         if (StringUtils.isEmpty(event.getEmail())) {
-            return IMoocJSONResult.errorMsg("Please login to set a reminder.");
+            return JSONResult.errorMsg("Please login to set a reminder.");
         }
 
         if (event.getId() == null) {
@@ -38,11 +38,11 @@ public class EventController {
             eventService.editEvent(event);
         }
 
-        return IMoocJSONResult.ok();
+        return JSONResult.ok();
     }
 
     @PostMapping("/query")
-    public IMoocJSONResult queryEvent(String email) {
+    public JSONResult queryEvent(String email) {
         List<Event> eventList = eventService.getEvent(email);
 
         // Sort events according to time
@@ -53,31 +53,31 @@ public class EventController {
                     return o1.getFromTime().compareTo(o2.getFromTime());
                 }
             });
-            return IMoocJSONResult.ok(eventList);
+            return JSONResult.ok(eventList);
         }
-        return IMoocJSONResult.errorMsg("Unable to find an event.");
+        return JSONResult.errorMsg("Unable to find an event.");
     }
 
     @PostMapping("/drop")
-    public IMoocJSONResult dropEvent(String id) {
+    public JSONResult dropEvent(String id) {
         eventService.deleteEvent(id);
-        return IMoocJSONResult.ok();
+        return JSONResult.ok();
     }
 
     @PostMapping("/detail")
-    public IMoocJSONResult detailReminder(String id) {
+    public JSONResult detailReminder(String id) {
         if (eventService.getDetailsOfEvent(id) == null) {
-            return IMoocJSONResult.errorMsg("Unable to find an event");
+            return JSONResult.errorMsg("Unable to find an event");
         }
-        return IMoocJSONResult.ok(eventService.getDetailsOfEvent(id));
+        return JSONResult.ok(eventService.getDetailsOfEvent(id));
     }
 
     @PostMapping("/update")
-    public IMoocJSONResult updateEvent(String id) {
+    public JSONResult updateEvent(String id) {
         if (eventService.updateEventTime(id)) {
-            return IMoocJSONResult.ok();
+            return JSONResult.ok();
         }
-        return IMoocJSONResult.errorMsg("Unable to update");
+        return JSONResult.errorMsg("Unable to update");
     }
 
 }
